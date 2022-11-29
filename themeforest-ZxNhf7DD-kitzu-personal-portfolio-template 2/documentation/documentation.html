@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- The below 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Title -->
+  <title>
+    Documentation</title>
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Exo+2:400" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i" rel="stylesheet">
+  <!-- github-markdown-css -->
+  <link href="assets/css/github-markdown.min.css" rel="stylesheet">
+  <!-- highlight.js -->
+  <link href="assets/css/highlightjs.min.css" rel="stylesheet">
+  <!-- Main CSS files -->
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Documentation -->
+  <div id="documentation">
+    <article class="markdown-body">
+      <h1 id="kitzu">Kitzu</h1>
+<p>Personal Portfolio Template</p>
+<h3 id="thank-you-for-purchasing-kitzu-i-wish-you-all-the-best-with-this-item">Thank you for purchasing Kitzu, i wish you all the best with this item!</h3>
+<hr>
+<p>If you have any questions that are beyond the scope of this documentation file, please feel free to <a href="https://themeforest.net/user/exill">contact</a> us​ anytime.</p>
+<p>I would be very grateful if you could rate my item at <a href="https://themeforest.net/downloads">this link</a>​ with ​5 stars​ (★★★★★) and leave your feedback, this is very important for me, Thanks! ❤️</p>
+<hr>
+<h2 id="general-information">General Information</h2>
+<ul>
+<li>Template version: 2.0.0</li>
+<li>By: <a href="https://themeforest.net/user/exill">Exill</a></li>
+</ul>
+<h2 id="template-files-structure">Template files structure</h2>
+<ul>
+<li><code>documentation</code> - The current folder</li>
+<li><code>Template</code> - Contains Template files<ul>
+<li><code>css</code> - Contains Stylesheets files</li>
+<li><code>fonts</code> - Contains Font files</li>
+<li><code>img</code> - Contains Images</li>
+<li><code>js</code> - Contains JavaScript files</li>
+<li><code>php</code> - Contains PHP files</li>
+<li><code>*.html</code> - Main HTML files</li>
+</ul>
+</li>
+</ul>
+<h2 id="basic-minimal-file-structure">Basic minimal file structure</h2>
+<pre><code class="language-html"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-meta-keyword">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"zxx"</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+  <span class="hljs-comment">&lt;!-- Title of the page, scripts, styles --&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+  <span class="hljs-comment">&lt;!-- Preloader--&gt;</span>
+  <span class="hljs-comment">&lt;!-- Navbar--&gt;</span>
+  <span class="hljs-comment">&lt;!-- Home--&gt;</span>
+  <span class="hljs-comment">&lt;!-- About lightbox--&gt;</span>
+  <span class="hljs-comment">&lt;!-- Resume lightbox--&gt;</span>
+  <span class="hljs-comment">&lt;!-- Portfolio lightbox--&gt;</span>
+  <span class="hljs-comment">&lt;!-- Blog lightbox--&gt;</span>
+  <span class="hljs-comment">&lt;!-- Contact lightbox--&gt;</span>
+  <span class="hljs-comment">&lt;!-- Scripts--&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></code></pre>
+<h3 id="notes">Notes</h3>
+<p>For Template customization, please add your custom styles and scripts to <code>css/custom.css</code> and <code>js/custom.js</code>. This will make it easier for you to install template updates.</p>
+<h2 id="variants-customizations">Variants Customizations</h2>
+<h3 id="variants-list">Variants List</h3>
+<p>Note: If you want to check them out, <a href="https://themeforest.net/downloads">click here</a> and then visit this item&#39;s purchase page and under it&#39;s thumbnail click on the Live Preview button.</p>
+<h3 id="video-background-variant">Video Background Variant</h3>
+<p>We have used jquery.mb.YTPlayer component in this variant, it lets you play YouTube videos as a background.
+Simply, open <code>video.html</code> file, search <code>homeVideo</code> and in the <code>data-property</code> attribute, replace <code>https://youtu.be/YOUR_VIDEO_ID</code> with the link of your YouTube video:</p>
+<pre><code class="language-html">&lt;div <span class="hljs-class"><span class="hljs-keyword">class</span>="<span class="hljs-title">player</span>" <span class="hljs-title">id</span>="<span class="hljs-title">homeVideo</span>" <span class="hljs-title">data</span>-<span class="hljs-title">property</span>="{</span><span class="hljs-string">videoURL:</span><span class="hljs-string">'https://youtu.be/KR97TgpMyrc'</span>,<span class="hljs-string">containment:</span><span class="hljs-string">'#home'</span>,<span class="hljs-string">autoPlay:</span><span class="hljs-literal">true</span>, <span class="hljs-string">mute:</span><span class="hljs-literal">true</span>, <span class="hljs-string">showControls:</span><span class="hljs-literal">false</span>, <span class="hljs-string">stopMovieOnBlur:</span><span class="hljs-literal">false</span>, <span class="hljs-string">showYTLogo:</span> <span class="hljs-literal">false</span>}<span class="hljs-string">"&gt;&lt;/div&gt;</span></code></pre>
+<h2 id="general-customizations">General Customizations</h2>
+<h3 id="color-schemes">Color schemes</h3>
+<p>We have created 24 various color options, choose your favorite...</p>
+<p>To switch colors, you just have to edit the following line in your HTML file:</p>
+<pre><code class="language-css">&lt;link <span class="hljs-attribute">id</span>=<span class="hljs-string">"color-scheme"</span> <span class="hljs-attribute">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attribute">href</span>=<span class="hljs-string">"css/colors/main-COLOR_NAME.css"</span>&gt;</code></pre>
+<h4 id="available-color-options">Available color options</h4>
+<pre><code><span class="hljs-selector-tag">main-blue</span><span class="hljs-selector-class">.css</span>         <span class="hljs-selector-tag">main-darkpink</span><span class="hljs-selector-class">.css</span>      <span class="hljs-selector-tag">main-pink</span><span class="hljs-selector-class">.css</span>
+<span class="hljs-selector-tag">main-blueviolet</span><span class="hljs-selector-class">.css</span>   <span class="hljs-selector-tag">main-darkred</span><span class="hljs-selector-class">.css</span>       <span class="hljs-selector-tag">main-purple</span><span class="hljs-selector-class">.css</span>
+<span class="hljs-selector-tag">main-brown</span><span class="hljs-selector-class">.css</span>        <span class="hljs-selector-tag">main-darkyellow</span><span class="hljs-selector-class">.css</span>    <span class="hljs-selector-tag">main-red</span><span class="hljs-selector-class">.css</span>
+<span class="hljs-selector-tag">main-cyan</span><span class="hljs-selector-class">.css</span>         <span class="hljs-selector-tag">main-green</span><span class="hljs-selector-class">.css</span>         <span class="hljs-selector-tag">main-redpink</span><span class="hljs-selector-class">.css</span>
+<span class="hljs-selector-tag">main-dark</span><span class="hljs-selector-class">.css</span>         <span class="hljs-selector-tag">main-indigo</span><span class="hljs-selector-class">.css</span>        <span class="hljs-selector-tag">main-royalblue</span><span class="hljs-selector-class">.css</span>
+<span class="hljs-selector-tag">main-darkblue</span><span class="hljs-selector-class">.css</span>     <span class="hljs-selector-tag">main-moodyblue</span><span class="hljs-selector-class">.css</span>     <span class="hljs-selector-tag">main-tangopink</span><span class="hljs-selector-class">.css</span>
+<span class="hljs-selector-tag">main-darkgreen</span><span class="hljs-selector-class">.css</span>    <span class="hljs-selector-tag">main-nightskyblue</span><span class="hljs-selector-class">.css</span>  <span class="hljs-selector-tag">main-teal</span><span class="hljs-selector-class">.css</span>
+<span class="hljs-selector-tag">main-darkmagenta</span><span class="hljs-selector-class">.css</span>  <span class="hljs-selector-tag">main-orange</span><span class="hljs-selector-class">.css</span>        <span class="hljs-selector-tag">main-yellowgreen</span><span class="hljs-selector-class">.css</span></code></pre><h3 id="icons">Icons</h3>
+<p>We have used Ionicons pack in this Template, you can easily add any icon by getting it&#39;s name from <a href="https://ionicons.com/">Here</a>.</p>
+<p>How to:</p>
+<ol>
+<li>Visit <a href="https://ionicons.com/v4">https://ionicons.com/v4</a></li>
+<li>Select the icon you want to use</li>
+<li>A bar will appear, click on <strong><code>USAGE &gt;</code></strong></li>
+<li>Scroll down to the bottom of the page, look for the <strong><code>Using the Font Icon</code></strong> section and use the code that&#39;s shown under <strong><code>Basic usage</code></strong></li>
+</ol>
+<h3 id="contact-form">Contact form</h3>
+<p>To configure this form, open <code>php/contact.php</code> and edit the following line:</p>
+<pre><code class="language-php"><span class="hljs-regexp">//</span> Email recipient
+<span class="hljs-variable">$EmailTo</span> = <span class="hljs-string">"YOUR_EMAIL@EXAMPLE.COM"</span>;</code></pre>
+<p>If the Contact form is not working after configuring it, there are some possibilities that could block this form from sending you submissions:</p>
+<ul>
+<li>Check your spam folder</li>
+<li>Make sure to enable the PHP mail() function on your server</li>
+<li>Upgrade the PHP version running on your server (Contact your hosting provider if you don&#39;t know how to upgrade)</li>
+</ul>
+<h3 id="global-classes">Global Classes</h3>
+<ul>
+<li><code>.button-main</code> - The main button style (White)</li>
+<li><code>.button-scheme</code> - An additional class for .button-main to inherit the current color scheme (E.g: blue, red...)</li>
+<li><code>.element-cover-bg</code> - Adds an overlay background to the element</li>
+<li><code>.color-scheme</code> - Current scheme <code>color:</code></li>
+<li><code>.background-scheme</code> - Current scheme <code>background-color:</code></li>
+<li><code>.anchor-basic</code> - Removes the the color from <code>&lt;a&gt;</code> tags</li>
+</ul>
+<h3 id="bootstrap-spacing-classes">Bootstrap spacing classes</h3>
+<p>You can also use a wide range of shorthand responsive margin and padding utility classes from <a href="https://getbootstrap.com/docs/4.3/utilities/spacing/">Bootstrap</a>.</p>
+<h2 id="uploading-to-your-server">Uploading to your Server</h2>
+<p>Assuming you already have a Domain name and Hosting, You need to get your FTP details from your Hosting control panel, then use those login details to connect to your server using an FTP client such as <a href="https://filezilla-project.org/download.php">FileZilla</a>, then you can start uploading your files.</p>
+<p><em>Note: You can also upload the template using the file manager from your control panel</em></p>
+<p><em>Due to local security restrictions, some features will not work locally. But everything will work once you upload your files to your server.</em></p>
+<h2 id="support">Support</h2>
+<p>We will be happy to help you solve any issues. If you have any questions, suggestions or ideas. Please feel free to <a href="https://themeforest.net/user/exill">contact us</a> anytime.</p>
+<p><a href="https://themeforest.net/downloads"><img src="assets/images/rate-us.png"></a></p>
+<p>And <a href="https://themeforest.net/user/exill">Follow our profile</a></p>
+<p>Once again. Thank you for purchasing this item!</p>
+<h2 id="credits">Credits</h2>
+<p>Check <code>assets-licenses.md</code> file for assets credits</p>
+<hr>
+<p>Designed and Developed with ❤️ by <a href="https://themeforest.net/user/exill">Exill</a>.</p>
+
+    </article>
+  </div>
+  <!-- Main JavaScript file -->
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
