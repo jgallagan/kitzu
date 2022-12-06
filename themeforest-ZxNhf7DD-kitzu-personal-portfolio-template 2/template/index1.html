@@ -26,6 +26,122 @@
   <link id="color-scheme" rel="stylesheet" href="css/colors/main-darkgreen.css">
   <!-- Custom CSS (Add your custom CSS styles to this file)-->
   <link rel="stylesheet" href="css/custom.css">
+  <meta charset="UTF-8">
+    
+  <link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
+  <meta name="apple-mobile-web-app-title" content="CodePen">
+  
+  <link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+  
+  <link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
+  <style>
+    /* BASIC STYLES
+    –––––––––––––––––––––––––––––––––––––––––––––––––– */
+    :root {
+      --yellow: #fffbbc;
+      --lightbox: #242424;
+    }
+    
+   
+    /* IMAGE GRID STYLES
+    –––––––––––––––––––––––––––––––––––––––––––––––––– */
+    .image-grid figure {
+      margin-bottom: 0;
+    }
+    
+    .image-grid img {
+      box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.15);
+      transition: box-shadow 0.2s;
+    }
+    
+    .image-grid a:hover img {
+      box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.35);
+    }
+    
+    
+    /* LIGHTBOX STYLES
+    –––––––––––––––––––––––––––––––––––––––––––––––––– */
+    .lightbox-modal .modal-content {
+      background: var(--lightbox);
+    }
+    
+    .lightbox-modal .btn-close {
+      position: absolute;
+      top: 20px;
+      right: 18px;
+      font-size: 1.2rem;
+      z-index: 10;
+    }
+    
+    .lightbox-modal .modal-body {
+      display: flex;
+      align-items: center;
+      padding: 0;
+      text-align: center;
+    }
+    
+    .lightbox-modal img {
+      width: auto;
+      max-height: 100vh;
+      max-width: 100%;
+    }
+    
+    .lightbox-modal .carousel-caption {
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(36, 36, 36, 0.75);
+    }
+    
+    .lightbox-modal .carousel-control-prev,
+    .lightbox-modal .carousel-control-next {
+      top: 50%;
+      bottom: auto;
+      transform: translateY(-50%);
+      width: auto;
+    }
+    
+    .lightbox-modal .carousel-control-prev {
+      left: 10px;
+    }
+    
+    .lightbox-modal .carousel-control-next {
+      right: 10px;
+    }
+    
+    
+    /* FOOTER STYLES
+    –––––––––––––––––––––––––––––––––––––––––––––––––– */
+    .page-footer {
+      position: fixed;
+      right: 0;
+      bottom: 60px;
+      display: flex;
+      align-items: center;
+      font-size: 1rem;
+      padding: 5px;
+      background: rgba(255, 255, 255, 0.65);
+    }
+    
+    .page-footer a {
+      display: flex;
+      margin-left: 9px;
+    }
+    </style>
+    
+      <script>
+      window.console = window.console || function(t) {};
+    </script>
+    
+      
+      
+      <script>
+      if (document.location.search.match(/type=embed/gi)) {
+        window.parent.postMessage("resize", "*");
+      }
+    </script>
 </head>
 
 <body class="theme-dark">
@@ -469,95 +585,164 @@
               <!-- Thumbnail list-->
               <div class="portfolio-grid row">
                 <!-- Single item-->
-<h1 class="text-center mb-4">Meet Ireland through photos</h1>
-<section class="image-grid">
-  <div class="container-xxl">
-    <div class="row gy-4">
-      <div class="col-12 col-sm-6 col-md-4">
-        <figure>
-          <a class="d-block" href="">
-            <img width="1920" height="1280" src="https://assets.codepen.io/162656/ireland1.jpg" class="img-fluid" alt="Ring of Kerry, County Kerry, Ireland" data-caption="Ring of Kerry, County Kerry, Ireland">
-          </a>
-        </figure>
-      </div>
-      <div class="col-12 col-sm-6 col-md-4">
-        <figure>
-          <a class="d-block" href="">
-            <img width="1920" height="1280" src="https://assets.codepen.io/162656/ireland2.jpg" class="img-fluid" alt="Fintown, Ireland" data-caption="Fintown, Ireland">
-          </a>
-        </figure>
-      </div>
-      <div class="col-12 col-sm-6 col-md-4">
-        <figure>
-          <a class="d-block" href="">
-            <img width="1920" height="1280" src="https://assets.codepen.io/162656/ireland3.jpg" class="img-fluid" alt="Anne Street, Dublin, Ireland" data-caption="Anne Street, Dublin, Ireland">
-          </a>
-        </figure>
-      </div>
-      <div class="col-12 col-sm-6 col-md-4">
-        <figure>
-          <a class="d-block" href="">
-            <img width="1920" height="1280" src="https://assets.codepen.io/162656/ireland4.jpg" class="img-fluid" alt="Doonagore Castle, Doolin, Ireland" data-caption="Doonagore Castle, Doolin, Ireland">
-          </a>
-        </figure>
-      </div>
-      <div class="col-12 col-sm-6 col-md-4">
-        <figure>
-          <a class="d-block" href="">
-            <img width="1920" height="1280" src="https://assets.codepen.io/162656/ireland5.jpg" class="img-fluid" alt="Connemara National Park, Letterfrack, Ireland" data-caption="Connemara National Park, Letterfrack, Ireland">
-          </a>
-        </figure>
-      </div>
-      <div class="col-12 col-sm-6 col-md-4">
-        <figure>
-          <a class="d-block" href="">
-            <img width="1920" height="1280" src="https://assets.codepen.io/162656/ireland6.jpg" class="img-fluid" alt="Galway, Ireland" data-caption="Galway, Ireland">
-          </a>
-        </figure>
-      </div>
-      <div class="col-12 col-sm-6 col-md-4">
-        <figure>
-          <a class="d-block" href="">
-            <img width="1920" height="1280" src="https://assets.codepen.io/162656/ireland7.jpg" class="img-fluid" alt="Connemara National Park, Letterfrack, Ireland" data-caption="Connemara National Park, Letterfrack, Ireland">
-          </a>
-        </figure>
-      </div>
-      <div class="col-12 col-sm-6 col-md-4">
-        <figure>
-          <a class="d-block" href="">
-            <img width="1920" height="1280" src="https://assets.codepen.io/162656/ireland8.jpg" class="img-fluid" alt="The Forty Foot, Dublin 18, Ireland" data-caption="The Forty Foot, Dublin 18, Ireland">
-          </a>
-        </figure>
-      </div>
-      <div class="col-12 col-sm-6 col-md-4">
-        <figure>
-          <a class="d-block" href="">
-            <img width="1920" height="1280" src="https://assets.codepen.io/162656/ireland9.jpg" class="img-fluid" alt="Coliemore Harbour, Dublin, Ireland" data-caption="Coliemore Harbour, Dublin, Ireland">
-          </a>
-        </figure>
-      </div>
-    </div>
-  </div>
-</section>
-<div class="modal lightbox-modal" id="lightbox-modal" tabindex="-1">
-  <div class="modal-dialog modal-fullscreen">
-    <div class="modal-content">
-      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-      <div class="modal-body">
-        <div class="container-fluid p-0">
-          <!-- JS content here -->
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<footer class="page-footer">
-  <span>made by </span>
-  <a href="https://georgemartsoukos.com/" target="_blank">
-    <img width="24" height="24" src="https://assets.codepen.io/162656/george-martsoukos-small-logo.svg" alt="George Martsoukos logo">
-  </a>
-</footer>
+                <h1 class="text-center mb-4">Our Selection of Cars</h1>
+                <section class="image-grid">
+                  <div class="container-xxl">
+                    <div class="row gy-4">
+                      <div class="col-12 col-sm-6 col-md-4">
+                        <figure>
+                          <a class="d-block" href="">
+                            <img width="1920" height="1280" src="https://assets.codepen.io/162656/ireland1.jpg" class="img-fluid" alt="Ring of Kerry, County Kerry, Ireland" data-caption="Ring of Kerry, County Kerry, Ireland">
+                          </a>
+                        </figure>
+                      </div>
+                      <div class="col-12 col-sm-6 col-md-4">
+                        <figure>
+                          <a class="d-block" href="">
+                            <img width="1920" height="1280" src="https://assets.codepen.io/162656/ireland2.jpg" class="img-fluid" alt="Fintown, Ireland" data-caption="Fintown, Ireland">
+                          </a>
+                        </figure>
+                      </div>
+                      <div class="col-12 col-sm-6 col-md-4">
+                        <figure>
+                          <a class="d-block" href="">
+                            <img width="1920" height="1280" src="https://assets.codepen.io/162656/ireland3.jpg" class="img-fluid" alt="Anne Street, Dublin, Ireland" data-caption="Anne Street, Dublin, Ireland">
+                          </a>
+                        </figure>
+                      </div>
+                      <div class="col-12 col-sm-6 col-md-4">
+                        <figure>
+                          <a class="d-block" href="">
+                            <img width="1920" height="1280" src="https://assets.codepen.io/162656/ireland4.jpg" class="img-fluid" alt="Doonagore Castle, Doolin, Ireland" data-caption="Doonagore Castle, Doolin, Ireland">
+                          </a>
+                        </figure>
+                      </div>
+                      <div class="col-12 col-sm-6 col-md-4">
+                        <figure>
+                          <a class="d-block" href="">
+                            <img width="1920" height="1280" src="https://assets.codepen.io/162656/ireland5.jpg" class="img-fluid" alt="Connemara National Park, Letterfrack, Ireland" data-caption="Connemara National Park, Letterfrack, Ireland">
+                          </a>
+                        </figure>
+                      </div>
+                      <div class="col-12 col-sm-6 col-md-4">
+                        <figure>
+                          <a class="d-block" href="">
+                            <img width="1920" height="1280" src="https://assets.codepen.io/162656/ireland6.jpg" class="img-fluid" alt="Galway, Ireland" data-caption="Galway, Ireland">
+                          </a>
+                        </figure>
+                      </div>
+                      <div class="col-12 col-sm-6 col-md-4">
+                        <figure>
+                          <a class="d-block" href="">
+                            <img width="1920" height="1280" src="https://assets.codepen.io/162656/ireland7.jpg" class="img-fluid" alt="Connemara National Park, Letterfrack, Ireland" data-caption="Connemara National Park, Letterfrack, Ireland">
+                          </a>
+                        </figure>
+                      </div>
+                      <div class="col-12 col-sm-6 col-md-4">
+                        <figure>
+                          <a class="d-block" href="">
+                            <img width="1920" height="1280" src="https://assets.codepen.io/162656/ireland8.jpg" class="img-fluid" alt="The Forty Foot, Dublin 18, Ireland" data-caption="The Forty Foot, Dublin 18, Ireland">
+                          </a>
+                        </figure>
+                      </div>
+                      <div class="col-12 col-sm-6 col-md-4">
+                        <figure>
+                          <a class="d-block" href="">
+                            <img width="1920" height="1280" src="https://assets.codepen.io/162656/ireland9.jpg" class="img-fluid" alt="Coliemore Harbour, Dublin, Ireland" data-caption="Coliemore Harbour, Dublin, Ireland">
+                          </a>
+                        </figure>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                
+                <div class="modal lightbox-modal" id="lightbox-modal" tabindex="-1">
+                  <div class="modal-dialog modal-fullscreen">
+                    <div class="modal-content">
+                      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                      <div class="modal-body">
+                        <div class="container-fluid p-0">
+                          <!-- JS content here -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                    <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js"></script>
+                
+                  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"></script>
+                      <script id="rendered-js">
+                const imageGrid = document.querySelector(".image-grid");
+                const links = imageGrid.querySelectorAll("a");
+                const imgs = imageGrid.querySelectorAll("img");
+                const lightboxModal = document.getElementById("lightbox-modal");
+                const bsModal = new bootstrap.Modal(lightboxModal);
+                const modalBody = document.querySelector(".modal-body .container-fluid");
+                
+                for (const link of links) {
+                  link.addEventListener("click", function (e) {
+                    e.preventDefault();
+                    const currentImg = link.querySelector("img");
+                    const lightboxCarousel = document.getElementById("lightboxCarousel");
+                    if (lightboxCarousel) {
+                      const parentCol = link.parentElement.parentElement;
+                      const index = [...parentCol.parentElement.children].indexOf(parentCol);
+                      const bsCarousel = new bootstrap.Carousel(lightboxCarousel);
+                      bsCarousel.to(index);
+                    } else {
+                      createCarousel(currentImg);
+                    }
+                    bsModal.show();
+                  });
+                }
+                
+                function createCarousel(img) {
+                  const markup = `
+                    <div id="lightboxCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="false">
+                      <div class="carousel-inner">
+                        ${createSlides(img)}
+                      </div> 
+                      <button class="carousel-control-prev" type="button" data-bs-target="#lightboxCarousel" data-bs-slide="prev">
+                       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                       <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#lightboxCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                    `;
+                
+                  modalBody.innerHTML = markup;
+                }
+                
+                function createSlides(img) {
+                  let markup = "";
+                  const currentImgSrc = img.getAttribute("src");
+                
+                  for (const img of imgs) {
+                    const imgSrc = img.getAttribute("src");
+                    const imgAlt = img.getAttribute("alt");
+                    const imgCaption = img.getAttribute("data-caption");
+                
+                    markup += `
+                    <div class="carousel-item${currentImgSrc === imgSrc ? " active" : ""}">
+                      <img src=${imgSrc} alt=${imgAlt}>
+                      ${imgCaption ? createCaption(imgCaption) : ""}
+                    </div>
+                    `;
+                  }
+                
+                  return markup;
+                }
+                
+                function createCaption(caption) {
+                  return `<div class="carousel-caption">
+                     <p class="m-0">${caption}</p>
+                    </div>`;
+                }
+                //# sourceURL=pen.js
+                    </script>
                     </div>
                   </a></div>
               </div>
