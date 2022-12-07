@@ -264,6 +264,7 @@ hr {
 .content-title {
   line-height: 1.5;
   margin-bottom: 12px;
+  color: #AD1F25;
 }
 
 .tns-nav {
@@ -416,7 +417,7 @@ hr {
   animation-duration: 1s;
   animation-fill-mode: both;
   animation-timing-function: ease-in-out;
-  background-color: #181818;
+  background-color: #23445f;
   bottom: 0;
   display: block;
   position: fixed;
@@ -437,7 +438,7 @@ hr {
 }
 
 .lightbox-wrapper {
-  background-color: #101010;
+  background-color: #182d40;
   position: fixed;
 }
 
@@ -525,7 +526,7 @@ hr {
 }
 
 .lightbox-wrapper .simplebar-track.simplebar-vertical .simplebar-scrollbar:before {
-  background: #3c3c3c;
+  background: #23445f;
 }
 
 .lightbox-wrapper .lightbox-content {
@@ -550,6 +551,7 @@ hr {
   margin-bottom: 0;
   position: relative;
   z-index: 9;
+  color: #AD1F25;
 }
 
 .lightbox-wrapper .lightbox-content .section-heading.page-heading {
@@ -1009,6 +1011,7 @@ hr {
 .info-section .info-content .content-subtitle {
   font-size: 24px;
   margin-bottom: 15px;
+  color: #AD1F25;
 }
 
 .info-section .info-content .content-title {
@@ -1016,6 +1019,7 @@ hr {
   font-weight: 700;
   line-height: 1.6;
   margin-bottom: 16px;
+  color: #AD1F25;
 }
 
 .info-section .info-content .content-description {
@@ -1023,7 +1027,7 @@ hr {
 }
 
 .info-section .info-content .content-description p:last-child {
-  border-bottom: 2px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 2px solid rgba(204, 33, 44, 0.08); color: #cc2128 !important;
   margin-bottom: 0;
   padding-bottom: 29px;
 }
@@ -1049,6 +1053,7 @@ hr {
 }
 
 .info-section .info-content .content-info .single-info>p {
+  color: #cc2128;
   display: inline-block;
   margin-bottom: 0;
 }
@@ -1096,10 +1101,12 @@ hr {
 
   .info-section .info-content .content-subtitle {
     display: none;
+    color: #AD1F25;
   }
 
   .info-section .info-content .content-title {
     font-size: 26px;
+    color: #AD1F25;
   }
 
   .info-section .info-content .content-description {
@@ -1107,6 +1114,7 @@ hr {
   }
 
   .info-section .info-content .content-description p:last-child {
+    color: #cc2128;
     padding-bottom: 20px;
   }
 
@@ -1129,10 +1137,12 @@ hr {
 
   .info-section .info-content .content-subtitle {
     font-size: 18px;
+    color: #AD1F25;
   }
 
   .info-section .info-content .content-title {
     font-size: 26px;
+    color: #AD1F25;
   }
 
   .info-section .info-content .content-description {
@@ -1140,6 +1150,7 @@ hr {
   }
 
   .info-section .info-content .content-description p:last-child {
+    color: #cc2128;
     padding-bottom: 24px;
   }
 
@@ -1178,10 +1189,12 @@ hr {
 
   .info-section .info-content .content-subtitle {
     font-size: 18px;
+    color: #AD1F25;
   }
 
   .info-section .info-content .content-title {
     font-size: 22px;
+    color: #AD1F25;
   }
 
   .info-section .info-content .content-download {
@@ -1191,7 +1204,7 @@ hr {
 
 /* About: Services */
 .services-section .single-service {
-  background-color: #161616;
+  background-color: #23445f;
   border-bottom: 2px solid transparent;
   box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.2);
   margin-bottom: 30px;
@@ -1206,7 +1219,7 @@ hr {
 }
 
 .services-section .single-service .service-title {
-  color: #f3f3f3;
+  color: #AD1F25;
   font-size: 20px;
   font-weight: 500;
   letter-spacing: -0.5px;
@@ -1222,7 +1235,7 @@ hr {
   -moz-user-select: none;
   -ms-user-select: none;
   -webkit-user-select: none;
-  background-color: #161616;
+  background-color: #23445f;
   padding: 48px 40px;
   text-align: left;
   user-select: none;
@@ -1315,7 +1328,7 @@ hr {
 
 /* About: Pricing */
 .pricing-section .single-plan {
-  background-color: #161616;
+  background-color: #23445f;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.05);
   padding: 50px 0;
   text-align: center;
@@ -1372,7 +1385,7 @@ hr {
 }
 
 .resume-section .resume-item {
-  background-color: #161616;
+  background-color: #23445f;
   border-left: 2px solid transparent;
   padding: 32px 48px;
   position: relative;
@@ -1646,7 +1659,7 @@ hr {
 }
 
 .portfolio-section .portfolio-grid .portfolio-wrapper .item-content .content-title {
-  color: #fff;
+  color: #AD1F25;
   font-size: 15px;
   font-weight: 400;
   line-height: 1.8;
@@ -1677,6 +1690,7 @@ hr {
 @media (max-width: 575.98px) {
   .portfolio-section .portfolio-grid .portfolio-wrapper .item-content .content-title {
     font-size: 14px;
+    color: #AD1F25;
   }
 }
 
@@ -1711,6 +1725,7 @@ hr {
   font-weight: 600;
   letter-spacing: 0.1px;
   margin-bottom: 6px;
+  color: #AD1F25;
 }
 
 .blog-section .single-post .post-content .content-description {
@@ -1738,6 +1753,7 @@ hr {
 
 .contact-section .contact-form .content-title {
   margin-bottom: 22px;
+  color: #AD1F25;
 }
 
 .contact-section .contact-form .form-group {
@@ -1745,7 +1761,7 @@ hr {
 }
 
 .contact-section .contact-form .form-group .form-control {
-  background-color: #161616;
+  background-color: #23445f;
   border: none;
   border-bottom: 1px solid #1d1d1d;
   border-radius: 0;
@@ -1878,12 +1894,12 @@ hr {
 }
 
 .contact-section .contact-info .list-info .info-details .info-value a {
-  color: #9f9f9f !important;
+  color: #CC2128 !important;
 }
 
 .contact-section .contact-info .list-info .info-details .info-value a:hover,
 .contact-section .contact-info .list-info .info-details .info-value a:focus {
-  color: #797979 !important;
+  color: #CC2128 !important;
 }
 
 @media (max-width: 1199.98px) {
