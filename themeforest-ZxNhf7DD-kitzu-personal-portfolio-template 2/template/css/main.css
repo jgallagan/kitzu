@@ -68,11 +68,13 @@ b {
 /* Other elements */
 a {
   transition: all 0.15s ease-in-out;
+  color: #CC2128 !important;
 }
 
 a:hover,
 a:focus {
   text-decoration: none;
+  color: #CC2128;
 }
 
 hr {
@@ -264,7 +266,7 @@ hr {
 .content-title {
   line-height: 1.5;
   margin-bottom: 12px;
-  color: #AD1F25;
+  color: white;
 }
 
 .tns-nav {
@@ -667,7 +669,7 @@ hr {
 
 /*----------- Preloader lightbox -----------*/
 .preloader {
-  background-color: #0e0e0e;
+  background-color: #182d40;
   height: 100%;
   position: fixed;
   top: 0;
@@ -766,7 +768,7 @@ hr {
 }
 
 .navbar .navbar-nav .nav-link {
-  color: #e6e6e6;
+  color: #e6e6e6 !important;
   font-size: 15px;
   padding: 0;
 }
@@ -912,7 +914,7 @@ hr {
 }
 
 .home-area .home-name {
-  color: #fff;
+  color: #AD1F25;
   font-size: 70px;
   font-weight: 700;
   letter-spacing: 1px;
@@ -920,11 +922,12 @@ hr {
 }
 
 .home-area .home-headline {
-  color: #fff;
+  color: #CC2128;
   font-size: 32px;
-  font-weight: 400;
+  font-weight: 400, bold;
   letter-spacing: 0.3px;
   margin-bottom: 0;
+  font-style:italic;
 }
 
 .home-area .home-headline .single-headline {
@@ -932,10 +935,13 @@ hr {
   position: relative;
   text-align: left;
   vertical-align: top;
+  font-style: italic;
+  font-weight: 400, bold;
+  color: #aaaaaaee;
 }
 
 .home-area .home-headline .single-headline::after {
-  background-color: #b9b9b9;
+  background-color: #2f2f2f;
   content: '';
   height: 100%;
   position: absolute;
@@ -1011,15 +1017,14 @@ hr {
 .info-section .info-content .content-subtitle {
   font-size: 24px;
   margin-bottom: 15px;
-  color: #AD1F25;
+  color: white !important;
 }
-
 .info-section .info-content .content-title {
   font-size: 31px;
   font-weight: 700;
   line-height: 1.6;
   margin-bottom: 16px;
-  color: #AD1F25;
+  color: white;
 }
 
 .info-section .info-content .content-description {
@@ -1027,7 +1032,8 @@ hr {
 }
 
 .info-section .info-content .content-description p:last-child {
-  border-bottom: 2px solid rgba(204, 33, 44, 0.08); color: #cc2128 !important;
+  border-bottom: 2px solid rgba(204, 33, 44, 0.08);
+  color: #9f9f9f !important;
   margin-bottom: 0;
   padding-bottom: 29px;
 }
@@ -1040,14 +1046,16 @@ hr {
 
 .info-section .info-content .content-info>.row:last-child .single-info {
   margin-bottom: 0;
+  color: white;
 }
 
 .info-section .info-content .content-info .single-info {
   margin-bottom: 10px;
+  color: white;
 }
 
 .info-section .info-content .content-info .single-info>span {
-  color: #dadada;
+  color: white;
   font-weight: 400;
   margin-right: 10px;
 }
@@ -1070,10 +1078,11 @@ hr {
   display: flex;
   line-height: 100%;
   margin-bottom: 0;
+  color:red;
 }
 
 .info-section .info-content .content-follow:before {
-  background-color: rgba(255, 255, 255, 0.25);
+  background-color: rgba(255, 255, 255, 1);
   content: '';
   height: 2px;
   margin-right: 23px;
@@ -1082,14 +1091,22 @@ hr {
 
 .info-section .info-content .content-follow li {
   font-size: 21px;
+  color:red !important;
+  
 }
-
 .info-section .info-content .content-follow li:not(last-child) {
   margin-right: 14px;
+  color:red !important;
+  
 }
 
 .info-section .info-content .content-follow li a {
-  color: #cecece;
+  color:white !important;
+}
+
+.content-follow i:hover{
+  color:red;
+  transition:0.25s;
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
@@ -1106,15 +1123,16 @@ hr {
 
   .info-section .info-content .content-title {
     font-size: 26px;
-    color: #AD1F25;
+    color: white;
   }
 
   .info-section .info-content .content-description {
     font-size: 14px;
+    color: #9f9f9f;
   }
 
   .info-section .info-content .content-description p:last-child {
-    color: #cc2128;
+    color: #9f9f9f;
     padding-bottom: 20px;
   }
 
@@ -1142,7 +1160,7 @@ hr {
 
   .info-section .info-content .content-title {
     font-size: 26px;
-    color: #AD1F25;
+    color: white;
   }
 
   .info-section .info-content .content-description {
@@ -1150,7 +1168,7 @@ hr {
   }
 
   .info-section .info-content .content-description p:last-child {
-    color: #cc2128;
+    color: #9f9f9f;
     padding-bottom: 24px;
   }
 
@@ -1160,7 +1178,9 @@ hr {
     padding: 24px 0;
   }
 }
-
+#follow {
+  color:white;
+}
 @media (max-width: 767.98px) {
   .info-section .info-img img {
     height: 200px;
@@ -1194,7 +1214,7 @@ hr {
 
   .info-section .info-content .content-title {
     font-size: 22px;
-    color: #AD1F25;
+    color: white;
   }
 
   .info-section .info-content .content-download {
@@ -1219,15 +1239,17 @@ hr {
 }
 
 .services-section .single-service .service-title {
-  color: #AD1F25;
+  color: #da444c;
   font-size: 20px;
   font-weight: 500;
   letter-spacing: -0.5px;
+  margin-top:17px;
   margin-bottom: 14px;
 }
 
 .services-section .single-service .service-description {
   margin-bottom: 0;
+  color:rgb(255, 235, 235);
 }
 
 /* About: Testimonials */
@@ -1284,6 +1306,7 @@ hr {
 .testimonials-section .single-review .review-content {
   font-size: 15px;
   margin-bottom: 0;
+  color:white;
 }
 
 .testimonials-section .tns-outer {
@@ -1317,6 +1340,7 @@ hr {
 @media (max-width: 767.98px) {
   .testimonials-section .single-review .review-content {
     font-size: 14px;
+    color:white;
   }
 }
 
@@ -1403,6 +1427,7 @@ hr {
   left: 0;
   margin-top: 2px;
   position: absolute;
+  color:red;
 }
 
 .resume-section .resume-item .item-arrow:before,
@@ -1410,17 +1435,20 @@ hr {
   content: "";
   display: block;
   position: absolute;
+  color:red;
 }
 
 .resume-section .resume-item .item-arrow:before {
   height: 16px;
   left: 0;
   width: 16px;
+  color:red;
 }
 
 .resume-section .resume-item .item-arrow:after {
   border: 8px solid transparent;
   left: 16px;
+  color:red;
 }
 
 .resume-section .resume-item .item-title {
@@ -1659,7 +1687,7 @@ hr {
 }
 
 .portfolio-section .portfolio-grid .portfolio-wrapper .item-content .content-title {
-  color: #AD1F25;
+  color: white;
   font-size: 15px;
   font-weight: 400;
   line-height: 1.8;
@@ -1690,7 +1718,7 @@ hr {
 @media (max-width: 575.98px) {
   .portfolio-section .portfolio-grid .portfolio-wrapper .item-content .content-title {
     font-size: 14px;
-    color: #AD1F25;
+    color: white;
   }
 }
 
@@ -1725,7 +1753,7 @@ hr {
   font-weight: 600;
   letter-spacing: 0.1px;
   margin-bottom: 6px;
-  color: #AD1F25;
+  color: white;
 }
 
 .blog-section .single-post .post-content .content-description {
@@ -1741,6 +1769,7 @@ hr {
 
   .blog-section .single-post .post-content .content-title {
     font-size: 20px;
+    color: white;
   }
 }
 
@@ -1753,7 +1782,7 @@ hr {
 
 .contact-section .contact-form .content-title {
   margin-bottom: 22px;
-  color: #AD1F25;
+  color: white;
 }
 
 .contact-section .contact-form .form-group {

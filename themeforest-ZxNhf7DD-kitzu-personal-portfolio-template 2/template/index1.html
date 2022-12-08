@@ -29,7 +29,6 @@
   <meta charset="UTF-8">
     
   <link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
-  <meta name="apple-mobile-web-app-title" content="CodePen">
   
   <link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
   
@@ -46,11 +45,7 @@
     :root {
       --yellow: #fffbbc;
       --lightbox: #242424;
-    }
-    
-    body {
-      margin: 24px 0 48px;
-    }    
+    }   
     /* IMAGE GRID STYLES
     –––––––––––––––––––––––––––––––––––––––––––––––––– */
     .image-grid figure {
@@ -116,25 +111,6 @@
     .lightbox-modal .carousel-control-next {
       right: 10px;
     }
-    
-    
-    /* FOOTER STYLES
-    –––––––––––––––––––––––––––––––––––––––––––––––––– */
-    .page-footer {
-      position: fixed;
-      right: 0;
-      bottom: 60px;
-      display: flex;
-      align-items: center;
-      font-size: 1rem;
-      padding: 5px;
-      background: rgba(255, 255, 255, 0.65);
-    }
-    
-    .page-footer a {
-      display: flex;
-      margin-left: 9px;
-    }
     </style>
     
       <script>
@@ -171,7 +147,7 @@
         <li class="nav-item"><a class="nav-link" href="#portfolio">Cars</a></li>
         <li class="nav-item"><a class="nav-link" href="#blog">Reviews</a></li>
         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-        <li class="nav-item"><img src="/themeforest-ZxNhf7DD-kitzu-personal-portfolio-template 2/template/img/checkout.png" alt="checkout-cart"></li>
+        <li class="nav-item"><a class="nav-link" href="#contact"><img src="/themeforest-ZxNhf7DD-kitzu-personal-portfolio-template 2/template/img/checkout.png" alt="checkout-cart"></a></li>
       </ul>
     </div>
   </nav>
@@ -180,7 +156,7 @@
     <div class="container h-100">
       <div class="row h-100 align-items-center justify-content-center">
         <div class="col-12 col-lg-8 home-content text-center">
-          <h1 class="home-name"><a class="nav-link" href="#portfolio">About</a>
+          <h1 class="home-name">First Time</h1>
           <h4 class="cd-headline clip home-headline">We're commited to <span class="cd-words-wrapper single-headline"><b class="is-visible">Experience</b><b>Affordability</b><b>You</b></span></h4>
         </div>
       </div>
@@ -208,7 +184,7 @@
             <div class="row">
               <div class="col-12">
                 <div class="section-heading page-heading">
-                  <p class="section-description">About</p>
+                  <p style="font-weight:bolder;" class="section-description">About</p>
                   <h2 class="section-title">Our Mission</h2>
                   <div class="animated-bar"></div>
                 </div>
@@ -232,15 +208,15 @@
                         <div class="col-12 col-md-6 single-info"><span>Meet The Team!</span>
                         </div>
                         <div class="col-12 col-md-6 single-info"><span>Email:</span>
-                          <p><a href="mailto:emma@example.com">firstimecars@gmail.com</a></p>
+                          <p><a style="font-weight:bolder;" href="firstimecars@gmail.com">firstimecars@gmail.com</a></p>
                         </div>
                         <div class="col-12 col-md-6 single-info"><span></span>
-                          <br><p>Roger</p> <p>(Lead Developer)</p><br><p>Bri</p> <p>(Media Managment)</p><br><p>Janya</p> <p>(UX/UI Designer)</p><br><p>Patience</p> <p>(Project Manager)</p>
+                          <br><p style="font-weight:bolder;">Roger Souders</p> <p style="color:lightgray;">(Lead Developer)</p><br><p style="font-weight:bolder;">Bri Panzica</p> <p style="color:lightgray;">(Media Managment)</p><br><p style="font-weight:bolder;">Janya Nelahonne</p> <p style="color:lightgray;">(UX/UI Designer)</p><br><p style="font-weight:bolder;">Patience Johnson</p> <p style="color:lightgray;">(Project Manager)</p>
                         </div>
                       </div>
                       </div>
                     </address>
-                    <div><a>Follow Us</a>
+                    <div><p id="follow">Follow Us</p>
                       <ul class="list-unstyled list-inline content-follow">
                         <li><a href="https://twitter.com/firstimecars" target="_blank" rel="noopener noreferrer"><i class="icon ion-logo-twitter"></i></a></li>
                         <li><a href="https://www.facebook.com/profile.php?id=100088052810640" target="_blank" rel="noopener noreferrer"><i class="icon ion-logo-facebook"></i></a></li>
@@ -264,35 +240,35 @@
               <div class="row">
                 <!-- Single service-->
                 <div class="col-12 col-md-6 col-lg-4">
-                  <div class="single-service"><img src="/themeforest-ZxNhf7DD-kitzu-personal-portfolio-template 2/template/img/Skeleton.png">
+                  <div class="single-service"><img height="35" width="50" src="/icons!/college-student-discount-icon.png">
                     <h6 class="service-title">College Student Discounts</h6>
                     <p class="service-description">We understand the pressure of semesterly fees, so we offer a 20% discount to currently enrolled university students.</p>
                   </div>
                 </div>
                 <!-- Single service-->
                 <div class="col-12 col-md-6 col-lg-4">
-                  <div class="single-service"><i class="icon service-icon ion-md-images"></i>
-                    <h6 class="service-title"> Flexible Leasing</h6>
+                  <div class="single-service"><img height="50" width="50" src="/icons!/flexible-leasing-icon.png">
+                    <h6 class="service-title">Flexible Leasing</h6>
                     <p class="service-description">Not sure about your car? Sign a 1 month lease and trade your car in if you're unhappy or renew your lease again for anywhere from 1-12 months.</p>
                   </div>
                 </div>
                 <!-- Single service-->
                 <div class="col-12 col-md-6 col-lg-4">
-                  <div class="single-service"><i class="icon service-icon ion-logo-ionic"></i>
+                  <div class="single-service"><img height="50" width="50" src="/icons!/customer-support-icon.png">
                     <h6 class="service-title">Customer Support</h6>
                     <p class="service-description">Our biggest priority is to ensure the happiness of our customers so we offer customer help via email in a less than 24 hour return rate.</p>
                   </div>
                 </div>
                 <!-- Single service-->
                 <div class="col-12 col-md-6 col-lg-4">
-                  <div class="single-service"><i class="icon service-icon ion-logo-wordpress"></i>
+                  <div class="single-service"><img height="50" width="50" src="/icons!/certified-vehicles-icon.png">
                     <h6 class="service-title">Certified Vehicles</h6>
                     <p class="service-description">We inspect every car to guarantee transparency on the quality and condition of our vehicles.</p>
                   </div>
                 </div>
                 <!-- Single service-->
                 <div class="col-12 col-md-6 col-lg-4">
-                  <div class="single-service"><i class="icon service-icon ion-md-move"></i>
+                  <div class="single-service"><img height="40" width="50" src="/icons!/buy-online-icon.png">
                     <h6 class="service-title">Buy Online</h6>
                     <p class="service-description">No need to drive to the dealership, we bring the cars to you when you purchase your car from our website
                     </p>
@@ -300,20 +276,21 @@
                 </div>
                 <!-- Single service-->
                 <div class="col-12 col-md-6 col-lg-4">
-                  <div class="single-service"><i class="icon service-icon ion-ios-rocket"></i>
-                    <h6 class="service-title">Nothing Yet</h6>
-                    <p class="service-description">Hello, come back here later :)</p>
+                  <div class="single-service"><img height="50" width="50" src="/icons!/efficent-process-icon.png">
+                    <h6 class="service-title">Efficient Process</h6>
+                    <p class="service-description">We have made our buying and leasing experience as easy and efficient for you as possible</p>
                   </div>
                 </div>
               </div>
             </div>
+            <br>
             <!-- Testimonials section-->
             <div class="testimonials-section single-section">
               <div class="row">
                 <div class="col-12">
                   <div class="section-heading">
-                    <p class="section-description">What my clients think about me</p>
-                    <h2 class="section-title">Testimonials</h2>
+                    <p style="color:#CC2128; font-weight:bolder;" class="section-description">Our customers love their cars!</p>
+                    <h2 class="section-title">Customer Testimonials</h2>
                   </div>
                 </div>
               </div>
@@ -325,12 +302,12 @@
                       <div class="review-client">
                         <div class="media"><img class="img-fluid rounded-circle client-avatar" src="img/client-1.jpg" alt="Client">
                           <div class="client-details">
-                            <h6 class="client-name">Julia Sakura</h6><span class="client-role">Envato Customer</span>
+                            <h6 class="client-name">Yolanda Davis</h6><span class="client-role">“Buying my car was so easy!”</span>
                           </div>
                         </div>
-                      </div><i class="icon ion-md-quote review-icon"></i>
+                      </div><i style="color:red;" class="icon ion-md-quote review-icon"></i>
                     </div>
-                    <p class="review-content">Emma did an excellent creative job, addressing our request quickly, and also providing her own graphic insight, being open to feedback and changes or edits when they arose. She worked with us the entire way. Highly recommended.</p>
+                    <p class="review-content">First Time helped me throughout my buying process, they were so attentive to my needs and had super quick customer support. I couldn’t imagine buying my first car anywhere else, Thank you First Time.</p>
                   </div>
                 </div>
                 <div class="slider-item">
@@ -340,12 +317,12 @@
                       <div class="review-client">
                         <div class="media"><img class="img-fluid rounded-circle client-avatar" src="img/client-2.jpg" alt="Client">
                           <div class="client-details">
-                            <h6 class="client-name">John Santana</h6><span class="client-role">Entrepreneur</span>
+                            <h6 class="client-name">Makenna Rosario</h6><span class="client-role">“So Affordable!”</span>
                           </div>
                         </div>
-                      </div><i class="icon ion-md-quote review-icon"></i>
+                      </div><i style="color:red;" class="icon ion-md-quote review-icon"></i>
                     </div>
-                    <p class="review-content">Emma did an excellent creative job, addressing our request quickly, and also providing her own graphic insight, being open to feedback and changes or edits when they arose. She worked with us the entire way. Highly recommended.</p>
+                    <p class="review-content">First Time helped me get my car for less than my intended budget, my monthly car payment is perfect for me and fits perfectly into my monthly budget, even through college!</p>
                   </div>
                 </div>
                 <div class="slider-item">
@@ -355,12 +332,12 @@
                       <div class="review-client">
                         <div class="media"><img class="img-fluid rounded-circle client-avatar" src="img/client-3.jpg" alt="Client">
                           <div class="client-details">
-                            <h6 class="client-name">Maria Wilson</h6><span class="client-role">Envato Customer</span>
+                            <h6 class="client-name">Alex Sharp</h6><span class="client-role">“I love my car!”</span>
                           </div>
                         </div>
-                      </div><i class="icon ion-md-quote review-icon"></i>
+                      </div><i style="color:red;" class="icon ion-md-quote review-icon"></i>
                     </div>
-                    <p class="review-content">Emma did an excellent creative job, addressing our request quickly, and also providing her own graphic insight, being open to feedback and changes or edits when they arose. She worked with us the entire way. Highly recommended.</p>
+                    <p class="review-content">I was incredibly satisfied with the selection of cars and the pricing, while I was browsing for other cars there was nothing that was as first-time buyer friendly as First Time Cars and that’s why I chose to make my first purchase from them.</p>
                   </div>
                 </div>
               </div>
@@ -437,8 +414,8 @@
             <div class="row">
               <div class="col-12">
                 <div class="section-heading page-heading">
-                  <p class="section-description">Check out my Resume</p>
-                  <h2 class="section-title">Resume</h2>
+                  <p class="section-description">We’re here to help you</p>
+                  <h2 class="section-title">Help Center</h2>
                   <div class="animated-bar"></div>
                 </div>
               </div>
@@ -449,35 +426,35 @@
                 <!-- Education part-->
                 <div class="col-12 col-md-6">
                   <div class="col-block education">
-                    <h3 class="col-title">Education</h3>
+                    <h3 class="col-title">Buying your first Car</h3>
                     <div class="resume-item"><span class="item-arrow"></span>
-                      <h5 class="item-title">Computer Science</h5><span class="item-details">Cambridge University / 2004 - 2007</span>
-                      <p class="item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio quo repudiandae.</p>
+                      <h5 class="item-title">1: Determine your price range</h5><span class="item-details">First Choice wants you to make good choices.</span>
+                      <p class="item-description">We are committed to affordability and we encourage our customers to choose payment plans that fit well with their lifestyle rather than over committing.</p>
                     </div>
                     <div class="resume-item"><span class="item-arrow"></span>
-                      <h5 class="item-title">Bachelor Degree</h5><span class="item-details">University of Tokyo / 2008 - 2010</span>
-                      <p class="item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio quo repudiandae.</p>
+                      <h5 class="item-title">2: Identify your likes and dislikes</h5><span class="item-details">We want you to find everything you need here.</span>
+                      <p class="item-description">By determining what features you want or do not want on your car, you can significantly reduce the amount of car options until you find one that suits you best.</p>
                     </div>
                     <div class="resume-item"><span class="item-arrow"></span>
-                      <h5 class="item-title">Master Degree</h5><span class="item-details">Harvard University / 2012 - 2015</span>
-                      <p class="item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio quo repudiandae.</p>
+                      <h5 class="item-title">3: Find your dream car</h5><span class="item-details">Picking a car you love is important.</span>
+                      <p class="item-description">At First Time our top priority is guaranteeing that you are satisfied with your vehicle, because your first car is usually the first big purchase of your life!</p>
                     </div>
                   </div>
                 </div>
                 <!-- Experience part-->
                 <div class="col-12 col-md-6">
                   <div class="col-block experience">
-                    <h3 class="col-title">Experience</h3>
+                    <h3 class="col-title">&nbsp</h3>
                     <div class="resume-item"><span class="item-arrow"></span>
-                      <h5 class="item-title">Software Engineer</h5><span class="item-details">Adobe / 2015 - 2017</span>
+                      <h5 class="item-title">4: Make your down payment</h5><span class="item-details">Adobe / 2015 - 2017</span>
                       <p class="item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio quo repudiandae.</p>
                     </div>
                     <div class="resume-item"><span class="item-arrow"></span>
-                      <h5 class="item-title">Back-End Developer</h5><span class="item-details">Google / 2017 - 2018</span>
+                      <h5 class="item-title">5: Finance your monthly payments</h5><span class="item-details">Google / 2017 - 2018</span>
                       <p class="item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio quo repudiandae.</p>
                     </div>
                     <div class="resume-item"><span class="item-arrow"></span>
-                      <h5 class="item-title">UI/UX Designer</h5><span class="item-details">Discord / 2019 - Present</span>
+                      <h5 class="item-title">6: Insure your car</h5><span class="item-details">Discord / 2019 - Present</span>
                       <p class="item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio quo repudiandae.</p>
                     </div>
                   </div>
@@ -599,62 +576,77 @@
                         <figure>
                           <a class="d-block" href="">
                             <img width="1920" height="1280" src="https://github.com/jgallagan/kitzu/blob/main/themeforest-ZxNhf7DD-kitzu-personal-portfolio-template%202/template/img/Finished%20Convertible/car1-back.png?raw=true" class="img-fluid" alt="Ring of Kerry, County Kerry, Ireland" data-caption="Ring of Kerry, County Kerry, Ireland">
+
                           </a>
                         </figure>
                       </div>
                       <div class="col-12 col-sm-6 col-md-4">
                         <figure>
                           <a class="d-block" href="">
-                            <img width="1920" height="1280" src="https://assets.codepen.io/162656/ireland2.jpg" class="img-fluid" alt="Fintown, Ireland" data-caption="Fintown, Ireland">
+                            <img width="1920" height="1280" src="https://github.com/jgallagan/kitzu/blob/main/themeforest-ZxNhf7DD-kitzu-personal-portfolio-template%202/template/img/Finished%20Convertible/car1-trunk.JPG?raw=true" class="img-fluid" alt="Ring of Kerry, County Kerry, Ireland" data-caption="Ring of Kerry, County Kerry, Ireland">
                           </a>
                         </figure>
                       </div>
                       <div class="col-12 col-sm-6 col-md-4">
                         <figure>
                           <a class="d-block" href="">
-                            <img width="1920" height="1280" src="https://assets.codepen.io/162656/ireland3.jpg" class="img-fluid" alt="Anne Street, Dublin, Ireland" data-caption="Anne Street, Dublin, Ireland">
+                            <img width="1920" height="1280" src="https://github.com/jgallagan/kitzu/blob/main/themeforest-ZxNhf7DD-kitzu-personal-portfolio-template%202/template/img/Finished%20Convertible/car1-side-roof.JPG?raw=true" class="img-fluid" alt="Fintown, Ireland" data-caption="Fintown, Ireland">
                           </a>
                         </figure>
                       </div>
                       <div class="col-12 col-sm-6 col-md-4">
                         <figure>
                           <a class="d-block" href="">
-                            <img width="1920" height="1280" src="https://assets.codepen.io/162656/ireland4.jpg" class="img-fluid" alt="Doonagore Castle, Doolin, Ireland" data-caption="Doonagore Castle, Doolin, Ireland">
+                            <img width="1920" height="1280" src="https://github.com/jgallagan/kitzu/blob/main/themeforest-ZxNhf7DD-kitzu-personal-portfolio-template%202/template/img/Finished%20Convertible/car1-side-noroof.JPG?raw=true" class="img-fluid" alt="Anne Street, Dublin, Ireland" data-caption="Anne Street, Dublin, Ireland">
                           </a>
                         </figure>
                       </div>
                       <div class="col-12 col-sm-6 col-md-4">
                         <figure>
                           <a class="d-block" href="">
-                            <img width="1920" height="1280" src="https://assets.codepen.io/162656/ireland5.jpg" class="img-fluid" alt="Connemara National Park, Letterfrack, Ireland" data-caption="Connemara National Park, Letterfrack, Ireland">
+                            <img width="1920" height="1280" src="https://github.com/jgallagan/kitzu/blob/main/themeforest-ZxNhf7DD-kitzu-personal-portfolio-template%202/template/img/Finished%20Convertible/car1-side-fender.JPG?raw=true" class="img-fluid" alt="Doonagore Castle, Doolin, Ireland" data-caption="Doonagore Castle, Doolin, Ireland">
                           </a>
                         </figure>
                       </div>
                       <div class="col-12 col-sm-6 col-md-4">
                         <figure>
                           <a class="d-block" href="">
-                            <img width="1920" height="1280" src="https://assets.codepen.io/162656/ireland6.jpg" class="img-fluid" alt="Galway, Ireland" data-caption="Galway, Ireland">
+                            <img width="1920" height="1280" src="https://github.com/jgallagan/kitzu/blob/main/themeforest-ZxNhf7DD-kitzu-personal-portfolio-template%202/template/img/Finished%20Convertible/car1-grill.JPG?raw=true" class="img-fluid" alt="Connemara National Park, Letterfrack, Ireland" data-caption="Connemara National Park, Letterfrack, Ireland">
                           </a>
                         </figure>
                       </div>
                       <div class="col-12 col-sm-6 col-md-4">
                         <figure>
                           <a class="d-block" href="">
-                            <img width="1920" height="1280" src="https://assets.codepen.io/162656/ireland7.jpg" class="img-fluid" alt="Connemara National Park, Letterfrack, Ireland" data-caption="Connemara National Park, Letterfrack, Ireland">
+                            <img width="1920" height="1280" src="https://github.com/jgallagan/kitzu/blob/main/themeforest-ZxNhf7DD-kitzu-personal-portfolio-template%202/template/img/Finished%20Convertible/car1-tire.JPG?raw=true" class="img-fluid" alt="Galway, Ireland" data-caption="Galway, Ireland">
                           </a>
                         </figure>
                       </div>
                       <div class="col-12 col-sm-6 col-md-4">
                         <figure>
                           <a class="d-block" href="">
-                            <img width="1920" height="1280" src="https://assets.codepen.io/162656/ireland8.jpg" class="img-fluid" alt="The Forty Foot, Dublin 18, Ireland" data-caption="The Forty Foot, Dublin 18, Ireland">
+                            <img width="1920" height="1280" src="https://github.com/jgallagan/kitzu/blob/main/themeforest-ZxNhf7DD-kitzu-personal-portfolio-template%202/template/img/Finished%20Convertible/car1-back-seats.JPG?raw=true" class="img-fluid" alt="Connemara National Park, Letterfrack, Ireland" data-caption="Connemara National Park, Letterfrack, Ireland">
                           </a>
                         </figure>
                       </div>
                       <div class="col-12 col-sm-6 col-md-4">
                         <figure>
                           <a class="d-block" href="">
-                            <img width="1920" height="1280" src="https://assets.codepen.io/162656/ireland9.jpg" class="img-fluid" alt="Coliemore Harbour, Dublin, Ireland" data-caption="Coliemore Harbour, Dublin, Ireland">
+                            <img width="1920" height="1280" src="https://github.com/jgallagan/kitzu/blob/main/themeforest-ZxNhf7DD-kitzu-personal-portfolio-template%202/template/img/Finished%20Convertible/car1-front-seats.JPG?raw=true" class="img-fluid" alt="Connemara National Park, Letterfrack, Ireland" data-caption="Connemara National Park, Letterfrack, Ireland">
+                          </a>
+                        </figure>
+                      </div>
+                      <div class="col-12 col-sm-6 col-md-4">
+                        <figure>
+                          <a class="d-block" href="">
+                            <img width="1920" height="1280" src="https://github.com/jgallagan/kitzu/blob/main/themeforest-ZxNhf7DD-kitzu-personal-portfolio-template%202/template/img/Finished%20Convertible/car1-middle-console.JPG?raw=true" class="img-fluid" alt="Connemara National Park, Letterfrack, Ireland" data-caption="Connemara National Park, Letterfrack, Ireland">
+                          </a>
+                        </figure>
+                      </div>
+                      <div class="col-12 col-sm-6 col-md-4">
+                        <figure>
+                          <a class="d-block" href="">
+                            <img width="1920" height="1280" src="https://github.com/jgallagan/kitzu/blob/main/themeforest-ZxNhf7DD-kitzu-personal-portfolio-template%202/template/img/Finished%20Convertible/car1-steering-wheel.JPG?raw=true" class="img-fluid" alt="Connemara National Park, Letterfrack, Ireland" data-caption="Connemara National Park, Letterfrack, Ireland">
                           </a>
                         </figure>
                       </div>
@@ -913,7 +905,7 @@
                       <li>
                         <div class="media align-items-center"><span class="info-icon"><i class="icon ion-logo-ionic"></i></span>
                           <div class="media-body info-details">
-                            <h6 class="info-type">Name</h6><span class="info-value">Emma Smith</span>
+                            <h6 class="info-type">Name</h6><span class="info-value">First Time Cars</span>
                           </div>
                         </div>
                       </li>
@@ -934,7 +926,7 @@
                       <li>
                         <div class="media align-items-center"><span class="info-icon"><i class="icon ion-md-send"></i></span>
                           <div class="media-body info-details">
-                            <h6 class="info-type">Email Me</h6><span class="info-value"><a href="mailto:emma@example.com">emma@example.com</a></span>
+                            <h6 class="info-type">Email Me</h6><span class="info-value"><a href="mailto:firstimecars@gmail.com">firstimecars@gmail.com</a></span>
                           </div>
                         </div>
                       </li>
