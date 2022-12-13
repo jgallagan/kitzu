@@ -564,49 +564,6 @@ hr {
   text-align: center;
 }
 
-.lightbox-wrapper .lightbox-content .section-heading.page-heading>.section-title {
-  font-size: 46px;
-  margin-bottom: 37px;
-}
-
-.lightbox-wrapper .lightbox-content .section-heading.page-heading>.animated-bar {
-  background-color: #fff;
-  content: '';
-  display: block;
-  height: 4px;
-  left: 0;
-  margin: 0 auto 0 auto;
-  position: relative;
-  right: 0;
-  width: 75px;
-}
-
-.lightbox-wrapper .lightbox-content .section-heading.page-heading>.animated-bar:before,
-.lightbox-wrapper .lightbox-content .section-heading.page-heading>.animated-bar:after {
-  -webkit-animation-duration: 3s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-name: barAnimation;
-  -webkit-animation-timing-function: linear;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-  animation-name: barAnimation;
-  animation-timing-function: linear;
-  background-color: #101010;
-  content: '';
-  height: 100%;
-  position: absolute;
-  top: 0;
-  width: 4px;
-}
-
-.lightbox-wrapper .lightbox-content .section-heading.page-heading>.animated-bar:before {
-  left: 8px;
-}
-
-.lightbox-wrapper .lightbox-content .section-heading.page-heading>.animated-bar:after {
-  left: 0;
-}
-
 @-webkit-keyframes barAnimation {
   from {
     -webkit-transform: translateX(0);
@@ -1015,7 +972,8 @@ hr {
 /*----------- About lightbox -----------*/
 /* About: Info */
 .info-section .info-img img {
-  background-color: transparent;
+  background-color: rgb(75, 75, 75);
+  border-radius:100px;
   border-color: rgba(0, 0, 0, 0.18);
   width: 430px;
 }
