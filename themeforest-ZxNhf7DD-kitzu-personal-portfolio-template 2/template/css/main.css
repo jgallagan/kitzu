@@ -1846,6 +1846,7 @@ hr {
 .contact-section .contact-info .info-description {
   font-size: 15px;
   margin-bottom: 28px;
+  color:#cc2128;
 }
 
 .contact-section .contact-info .list-info>li:first-child .info-icon {
@@ -1919,4 +1920,20 @@ hr {
   .contact-section .contact-info .info-description {
     font-size: 14px;
   }
+}
+
+.float-child {
+  width: 50%;
+  width: fit-content;
+  float: left;
+  margin-left: 30%;
+  padding: 20px;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  border: 2px solid red;
+  color:white;
+} 
+
+.float-child.green {
+  margin-right":100px;
 }
