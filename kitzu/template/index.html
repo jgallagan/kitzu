@@ -10,7 +10,7 @@
   <meta name="description" content="Personal Portfolio Template">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- Favicons-->
-  <link rel="icon" type="image/x-icon" href="/themeforest-ZxNhf7DD-kitzu-personal-portfolio-template 2/documentation/assets/images/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/x-icon" href="/kitzu/template/img/favicons/favicon-32x32.png">
   <!-- Web fonts-->
   <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i&amp;display=swap" rel="stylesheet">
   <!-- CSS vendors-->
@@ -26,6 +26,104 @@
   <link id="color-scheme" rel="stylesheet" href="css/colors/main-darkgreen.css">
   <!-- Custom CSS (Add your custom CSS styles to this file)-->
   <link rel="stylesheet" href="css/custom.css">
+  <meta charset="UTF-8">
+    
+  <link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
+  
+  <link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+  
+  <link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111">
+  
+  
+    
+    
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
+  <style>
+    /* BASIC STYLES
+    –––––––––––––––––––––––––––––––––––––––––––––––––– */
+    :root {
+      --yellow: #fffbbc;
+      --lightbox: #242424;
+    }   
+    /* IMAGE GRID STYLES
+    –––––––––––––––––––––––––––––––––––––––––––––––––– */
+    .image-grid figure {
+      margin-bottom: 0;
+    }
+    
+    .image-grid img {
+      box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.15);
+      transition: box-shadow 0.2s;
+    }
+    
+    .image-grid a:hover img {
+      box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.35);
+    }
+    
+    
+    /* LIGHTBOX STYLES
+    –––––––––––––––––––––––––––––––––––––––––––––––––– */
+    .lightbox-modal .modal-content {
+      background: var(--lightbox);
+    }
+    
+    .lightbox-modal .btn-close {
+      position: absolute;
+      top: 20px;
+      right: 18px;
+      font-size: 1.2rem;
+      z-index: 10;
+    }
+    
+    .lightbox-modal .modal-body {
+      display: flex;
+      align-items: center;
+      padding: 0;
+      text-align: center;
+    }
+    
+    .lightbox-modal img {
+      width: auto;
+      max-height: 100vh;
+      max-width: 100%;
+    }
+    
+    .lightbox-modal .carousel-caption {
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(36, 36, 36, 0.75);
+    }
+    
+    .lightbox-modal .carousel-control-prev,
+    .lightbox-modal .carousel-control-next {
+      top: 50%;
+      bottom: auto;
+      transform: translateY(-50%);
+      width: auto;
+    }
+    
+    .lightbox-modal .carousel-control-prev {
+      left: 10px;
+    }
+    
+    .lightbox-modal .carousel-control-next {
+      right: 10px;
+    }
+    </style>
+    
+      <script>
+      window.console = window.console || function(t) {};
+    </script>
+    
+      
+      
+      <script>
+      if (document.location.search.match(/type=embed/gi)) {
+        window.parent.postMessage("resize", "*");
+      }
+    </script>
 </head>
 
 <body class="theme-dark">
@@ -39,7 +137,7 @@
   <!-- Navbar-->
   <nav class="navbar-expand-md navbar fixed-top" id="navbar"><a class="navbar-brand" data-scroll="" href="#home-area">
       <!-- Navbar Logo-->
-      <img class="img-fluid" src="/themeforest-ZxNhf7DD-kitzu-personal-portfolio-template 2/documentation/assets/images/favicons/apple-touch-icon.png" alt="Logo"></a>
+      <img class="img-fluid" src="img/favicons/apple-touch-icon.png" alt="Logo"></a>
     <span class="navbar-menu ml-auto" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" role="button"><span class="btn-line"></span></span>
     <div class="collapse navbar-collapse order-1 order-lg-0" id="navbarSupportedContent">
       <!-- Navbar menu-->
@@ -47,18 +145,17 @@
         <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
         <li class="nav-item"><a class="nav-link" href="#resume">Help Center</a></li>
         <li class="nav-item"><a class="nav-link" href="#portfolio">Cars</a></li>
-        <li class="nav-item"><a class="nav-link" href="#blog">Reviews</a></li>
         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-        <li class="nav-item"><img src="/themeforest-ZxNhf7DD-kitzu-personal-portfolio-template 2/template/img/checkout.png" alt="checkout-cart"></li>
+        <li class="nav-item"><a class="nav-link" href="#blog"><img src="/kitzu/template/img/checkout.png" alt="checkout-cart"></a></li>
       </ul>
     </div>
   </nav>
   <!-- Home-->
-  <section class="home-area element-cover-bg" id="home" style="background-image:url(img/home.jpg)">
+  <section class="home-area element-cover-bg" id="home" style="background-image:url(img/rock-one-eyebrow-raised-rock-staring.gif)">
     <div class="container h-100">
       <div class="row h-100 align-items-center justify-content-center">
         <div class="col-12 col-lg-8 home-content text-center">
-          <h1 class="home-name" class="nav-item"><a class="nav-link" href="index1.html">First Time Cars</a></h1>
+          <h1 class="home-name">First Time</h1>
           <h4 class="cd-headline clip home-headline">We're commited to <span class="cd-words-wrapper single-headline"><b class="is-visible">Experience</b><b>Affordability</b><b>You</b></span></h4>
         </div>
       </div>
@@ -86,9 +183,8 @@
             <div class="row">
               <div class="col-12">
                 <div class="section-heading page-heading">
-                  <p class="section-description">About</p>
+                  <p style="font-weight:bolder;" class="section-description">About</p>
                   <h2 class="section-title">Our Mission</h2>
-                  <div class="animated-bar"></div>
                 </div>
               </div>
             </div>
@@ -110,15 +206,15 @@
                         <div class="col-12 col-md-6 single-info"><span>Meet The Team!</span>
                         </div>
                         <div class="col-12 col-md-6 single-info"><span>Email:</span>
-                          <p><a href="mailto:emma@example.com">firstimecars@gmail.com</a></p>
+                          <p><a style="font-weight:bolder;" href="firstimecars@gmail.com">firstimecars@gmail.com</a></p>
                         </div>
                         <div class="col-12 col-md-6 single-info"><span></span>
-                          <br><p>Roger</p> <p>(Lead Developer)</p><br><p>Bri</p> <p>(Media Managment)</p><br><p>Janya</p> <p>(UX/UI Designer)</p><br><p>Patience</p> <p>(Project Manager)</p>
+                          <br><p style="font-weight:bolder;">Roger Souders</p> <p style="color:lightgray;">(Lead Developer)</p><br><p style="font-weight:bolder;">Brianna Panzica</p> <p style="color:lightgray;">(Media Managment)</p><br><p style="font-weight:bolder;">Janya Nelahonne</p> <p style="color:lightgray;">(UX/UI Designer)</p><br><p style="font-weight:bolder;">Patience Johnson</p> <p style="color:lightgray;">(Project Manager)</p>
                         </div>
                       </div>
                       </div>
                     </address>
-                    <div><a>Follow Us</a>
+                    <div><p id="follow">Follow Us</p>
                       <ul class="list-unstyled list-inline content-follow">
                         <li><a href="https://twitter.com/firstimecars" target="_blank" rel="noopener noreferrer"><i class="icon ion-logo-twitter"></i></a></li>
                         <li><a href="https://www.facebook.com/profile.php?id=100088052810640" target="_blank" rel="noopener noreferrer"><i class="icon ion-logo-facebook"></i></a></li>
@@ -142,35 +238,35 @@
               <div class="row">
                 <!-- Single service-->
                 <div class="col-12 col-md-6 col-lg-4">
-                  <div class="single-service"><img src="/themeforest-ZxNhf7DD-kitzu-personal-portfolio-template 2/template/img/Skeleton.png">
+                  <div class="single-service"><img height="35" width="50" src="/icons!/college-student-discount-icon.png">
                     <h6 class="service-title">College Student Discounts</h6>
                     <p class="service-description">We understand the pressure of semesterly fees, so we offer a 20% discount to currently enrolled university students.</p>
                   </div>
                 </div>
                 <!-- Single service-->
                 <div class="col-12 col-md-6 col-lg-4">
-                  <div class="single-service"><i class="icon service-icon ion-md-images"></i>
-                    <h6 class="service-title"> Flexible Leasing</h6>
+                  <div class="single-service"><img height="50" width="50" src="/icons!/flexible-leasing-icon.png">
+                    <h6 class="service-title">Flexible Leasing</h6>
                     <p class="service-description">Not sure about your car? Sign a 1 month lease and trade your car in if you're unhappy or renew your lease again for anywhere from 1-12 months.</p>
                   </div>
                 </div>
                 <!-- Single service-->
                 <div class="col-12 col-md-6 col-lg-4">
-                  <div class="single-service"><i class="icon service-icon ion-logo-ionic"></i>
+                  <div class="single-service"><img height="50" width="50" src="/icons!/customer-support-icon.png">
                     <h6 class="service-title">Customer Support</h6>
                     <p class="service-description">Our biggest priority is to ensure the happiness of our customers so we offer customer help via email in a less than 24 hour return rate.</p>
                   </div>
                 </div>
                 <!-- Single service-->
                 <div class="col-12 col-md-6 col-lg-4">
-                  <div class="single-service"><i class="icon service-icon ion-logo-wordpress"></i>
+                  <div class="single-service"><img height="50" width="50" src="/icons!/certified-vehicles-icon.png">
                     <h6 class="service-title">Certified Vehicles</h6>
                     <p class="service-description">We inspect every car to guarantee transparency on the quality and condition of our vehicles.</p>
                   </div>
                 </div>
                 <!-- Single service-->
                 <div class="col-12 col-md-6 col-lg-4">
-                  <div class="single-service"><i class="icon service-icon ion-md-move"></i>
+                  <div class="single-service"><img height="40" width="50" src="/icons!/buy-online-icon.png">
                     <h6 class="service-title">Buy Online</h6>
                     <p class="service-description">No need to drive to the dealership, we bring the cars to you when you purchase your car from our website
                     </p>
@@ -178,20 +274,22 @@
                 </div>
                 <!-- Single service-->
                 <div class="col-12 col-md-6 col-lg-4">
-                  <div class="single-service"><i class="icon service-icon ion-ios-rocket"></i>
-                    <h6 class="service-title">Nothing Yet</h6>
-                    <p class="service-description">Hello, come back here later :)</p>
+                  <div class="single-service"><img height="50" width="50" src="/icons!/efficent-process-icon.png">
+                    <h6 class="service-title">Efficient Process</h6>
+                    <p class="service-description">We have made our buying and leasing experience as easy and efficient for you as possible</p>
                   </div>
                 </div>
               </div>
             </div>
+            <br>
             <!-- Testimonials section-->
             <div class="testimonials-section single-section">
               <div class="row">
                 <div class="col-12">
                   <div class="section-heading">
-                    <p class="section-description">What my clients think about me</p>
-                    <h2 class="section-title">Testimonials</h2>
+                    <br><br><br>
+                    <p style="font-weight:bolder;" class="section-description">Our customers love their cars!</p>
+                    <h2 class="section-title">Customer Testimonials</h2>
                   </div>
                 </div>
               </div>
@@ -203,12 +301,12 @@
                       <div class="review-client">
                         <div class="media"><img class="img-fluid rounded-circle client-avatar" src="img/client-1.jpg" alt="Client">
                           <div class="client-details">
-                            <h6 class="client-name">Julia Sakura</h6><span class="client-role">Envato Customer</span>
+                            <h6 class="client-name">Yolanda Davis</h6><span class="client-role">“Buying my car was so easy!”</span>
                           </div>
                         </div>
-                      </div><i class="icon ion-md-quote review-icon"></i>
+                      </div><i style="color:#cc2128" class="icon ion-md-quote review-icon"></i>
                     </div>
-                    <p class="review-content">Emma did an excellent creative job, addressing our request quickly, and also providing her own graphic insight, being open to feedback and changes or edits when they arose. She worked with us the entire way. Highly recommended.</p>
+                    <p class="review-content">First Time helped me throughout my buying process, they were so attentive to my needs and had super quick customer support. I couldn’t imagine buying my first car anywhere else, Thank you First Time.</p>
                   </div>
                 </div>
                 <div class="slider-item">
@@ -218,12 +316,12 @@
                       <div class="review-client">
                         <div class="media"><img class="img-fluid rounded-circle client-avatar" src="img/client-2.jpg" alt="Client">
                           <div class="client-details">
-                            <h6 class="client-name">John Santana</h6><span class="client-role">Entrepreneur</span>
+                            <h6 class="client-name">Makenna Rosario</h6><span class="client-role">“So Affordable!”</span>
                           </div>
                         </div>
-                      </div><i class="icon ion-md-quote review-icon"></i>
+                      </div><i style="color:#cc2128" class="icon ion-md-quote review-icon"></i>
                     </div>
-                    <p class="review-content">Emma did an excellent creative job, addressing our request quickly, and also providing her own graphic insight, being open to feedback and changes or edits when they arose. She worked with us the entire way. Highly recommended.</p>
+                    <p class="review-content">First Time helped me get my car for less than my intended budget, my monthly car payment is perfect for me and fits perfectly into my monthly budget, even through college!</p>
                   </div>
                 </div>
                 <div class="slider-item">
@@ -233,71 +331,17 @@
                       <div class="review-client">
                         <div class="media"><img class="img-fluid rounded-circle client-avatar" src="img/client-3.jpg" alt="Client">
                           <div class="client-details">
-                            <h6 class="client-name">Maria Wilson</h6><span class="client-role">Envato Customer</span>
+                            <h6 class="client-name">Alex Sharp</h6><span class="client-role">“I love my car!”</span>
                           </div>
                         </div>
-                      </div><i class="icon ion-md-quote review-icon"></i>
+                      </div><i style="color:#cc2128" class="icon ion-md-quote review-icon"></i>
                     </div>
-                    <p class="review-content">Emma did an excellent creative job, addressing our request quickly, and also providing her own graphic insight, being open to feedback and changes or edits when they arose. She worked with us the entire way. Highly recommended.</p>
+                    <p class="review-content">I was incredibly satisfied with the selection of cars and the pricing, while I was browsing for other cars there was nothing that was as first-time buyer friendly as First Time Cars and that’s why I chose to make my first purchase from them.</p>
                   </div>
                 </div>
               </div>
             </div>
-            <!-- Pricing section-->
-            <div class="pricing-section single-section">
-              <div class="row">
-                <div class="col-12">
-                  <div class="section-heading">
-                    <p class="section-description">Get started with my services</p>
-                    <h2 class="section-title">Choose a Plan</h2>
-                  </div>
-                </div>
-              </div>
-              <div class="row align-items-center">
-                <!-- Single plan-->
-                <div class="col-lg-4">
-                  <div class="single-plan mb-4 mb-sm-5"><i class="plan-icon icon ion-md-egg"></i>
-                    <h3 class="plan-type">Standard</h3>
-                    <h2 class="plan-price">$19/month</h2>
-                    <ul class="list-unstyled plan-list">
-                      <li>Mobile App Design</li>
-                      <li>Responsive Design</li>
-                      <li>Database Development</li>
-                      <li>Web Design</li>
-                      <li>24/7 Support</li>
-                    </ul><a class="btn button-main button-scheme plan-btn" href="#0" role="button">Get Standard</a>
-                  </div>
-                </div>
-                <!-- Single plan-->
-                <div class="col-lg-4">
-                  <div class="single-plan mb-4 mb-sm-5"><i class="plan-icon icon ion-ios-rocket"></i>
-                    <h3 class="plan-type">Professional</h3>
-                    <h2 class="plan-price">$29/month</h2>
-                    <ul class="list-unstyled plan-list">
-                      <li>Mobile App Design</li>
-                      <li>Responsive Design</li>
-                      <li>Database Development</li>
-                      <li>Web Design</li>
-                      <li>24/7 Support</li>
-                    </ul><a class="btn button-main button-scheme plan-btn" href="#0" role="button">Get Pro</a>
-                  </div>
-                </div>
-                <!-- Single plan-->
-                <div class="col-lg-4">
-                  <div class="single-plan mb-4 mb-sm-5"><i class="plan-icon icon ion-logo-ionic"></i>
-                    <h3 class="plan-type">Business</h3>
-                    <h2 class="plan-price">$39/month</h2>
-                    <ul class="list-unstyled plan-list">
-                      <li>Mobile App Design</li>
-                      <li>Responsive Design</li>
-                      <li>Database Development</li>
-                      <li>Web Design</li>
-                      <li>24/7 Support</li>
-                    </ul><a class="btn button-main button-scheme plan-btn" href="#0" role="button">Get Business</a>
-                  </div>
-                </div>
-              </div>
-            </div>
+            
           </div>
         </div>
       </div>
@@ -315,9 +359,8 @@
             <div class="row">
               <div class="col-12">
                 <div class="section-heading page-heading">
-                  <p class="section-description">Check out my Resume</p>
-                  <h2 class="section-title">Resume</h2>
-                  <div class="animated-bar"></div>
+                  <p class="section-description">We’re here to help you</p>
+                  <h2 class="section-title">Help Center</h2>
                 </div>
               </div>
             </div>
@@ -327,107 +370,42 @@
                 <!-- Education part-->
                 <div class="col-12 col-md-6">
                   <div class="col-block education">
-                    <h3 class="col-title">Education</h3>
+                    <h3 class="col-title">Buying your first Car</h3>
                     <div class="resume-item"><span class="item-arrow"></span>
-                      <h5 class="item-title">Computer Science</h5><span class="item-details">Cambridge University / 2004 - 2007</span>
-                      <p class="item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio quo repudiandae.</p>
+                      <h5 class="item-title">1: Determine your price range</h5><span class="item-details">First Choice wants you to make good choices.</span>
+                      <p class="item-description">We are committed to affordability and we encourage our customers to choose payment plans that fit well with their lifestyle rather than over committing.</p>
                     </div>
                     <div class="resume-item"><span class="item-arrow"></span>
-                      <h5 class="item-title">Bachelor Degree</h5><span class="item-details">University of Tokyo / 2008 - 2010</span>
-                      <p class="item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio quo repudiandae.</p>
+                      <h5 class="item-title">2: Identify your likes and dislikes</h5><span class="item-details">We want you to find everything you need here.</span>
+                      <p class="item-description">By determining what features you want or do not want on your car, you can significantly reduce the amount of car options until you find one that suits you best.</p>
                     </div>
                     <div class="resume-item"><span class="item-arrow"></span>
-                      <h5 class="item-title">Master Degree</h5><span class="item-details">Harvard University / 2012 - 2015</span>
-                      <p class="item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio quo repudiandae.</p>
+                      <h5 class="item-title">3: Find your dream car</h5><span class="item-details">Picking a car you love is important.</span>
+                      <p class="item-description">At First Time our top priority is guaranteeing that you are satisfied with your vehicle, because your first car is usually the first big purchase of your life!</p>
                     </div>
                   </div>
                 </div>
                 <!-- Experience part-->
                 <div class="col-12 col-md-6">
                   <div class="col-block experience">
-                    <h3 class="col-title">Experience</h3>
+                    <h3 class="col-title">&nbsp</h3>
                     <div class="resume-item"><span class="item-arrow"></span>
-                      <h5 class="item-title">Software Engineer</h5><span class="item-details">Adobe / 2015 - 2017</span>
-                      <p class="item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio quo repudiandae.</p>
+                      <h5 class="item-title">4: Make your down payment</h5><span class="item-details">The larger the down payment, the lower the monthly cost.</span>
+                      <p class="item-description">By alleviating yourself of as much of the cost of your car as possible, we can commit to providing you with significantly lower leasing payments.</p>
                     </div>
                     <div class="resume-item"><span class="item-arrow"></span>
-                      <h5 class="item-title">Back-End Developer</h5><span class="item-details">Google / 2017 - 2018</span>
-                      <p class="item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio quo repudiandae.</p>
+                      <h5 class="item-title">5: Finance your monthly payments</h5><span class="item-details">High credit score, down payments and leasing options determine the monthly cost for your car.</span>
+                      <p class="item-description">We offer leases from 1-12 months and we try to provide the lowest cost possible for the plan that you choose.</p>
                     </div>
                     <div class="resume-item"><span class="item-arrow"></span>
-                      <h5 class="item-title">UI/UX Designer</h5><span class="item-details">Discord / 2019 - Present</span>
-                      <p class="item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio quo repudiandae.</p>
+                      <h5 class="item-title">6: Insure your car</h5><span class="item-details">We have many trusted insurance companies we recommend to our customers</span>
+                      <p class="item-description">We recommend some of the highest quality and affordable insurance companies including, Geico, Nationwide, USAA, and Statefarm.</p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <!-- Skills section-->
-            <div class="skills-section single-section">
-              <div class="row">
-                <div class="col-12">
-                  <div class="section-heading">
-                    <p class="section-description">My level of knowledge in some tools</p>
-                    <h2 class="section-title">My Skills</h2>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-12 col-md-6">
-                  <div class="single-skill" data-percentage="95">
-                    <div class="skill-info"><span class="skill-name">HTML/CSS</span><span class="skill-percentage"></span></div>
-                    <div class="progress skill-progress">
-                      <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div>
-                  <div class="single-skill" data-percentage="80">
-                    <div class="skill-info"><span class="skill-name">Web Design</span><span class="skill-percentage"></span></div>
-                    <div class="progress skill-progress">
-                      <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div>
-                  <div class="single-skill" data-percentage="90">
-                    <div class="skill-info"><span class="skill-name">JavaScript</span><span class="skill-percentage"></span></div>
-                    <div class="progress skill-progress">
-                      <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-md-6">
-                  <div class="single-skill" data-percentage="90">
-                    <div class="skill-info"><span class="skill-name">React JS</span><span class="skill-percentage"></span></div>
-                    <div class="progress skill-progress">
-                      <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div>
-                  <div class="single-skill" data-percentage="95">
-                    <div class="skill-info"><span class="skill-name">Express.js</span><span class="skill-percentage"></span></div>
-                    <div class="progress skill-progress">
-                      <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div>
-                  <div class="single-skill" data-percentage="80">
-                    <div class="skill-info"><span class="skill-name">TypeScript</span><span class="skill-percentage"></span></div>
-                    <div class="progress skill-progress">
-                      <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Video section-->
-            <div class="video-section single-section">
-              <div class="row align-items-center">
-                <div class="col-12 col-lg-6 content-part">
-                  <h3 class="video-title">Take a tour of my office</h3>
-                  <p class="video-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia cum quasi assumenda culpa praesentium consectetur voluptatibus expedita. Voluptatem tempore, aspernatur rem facilis, distinctio nemo! Odio velit, nemo dolorem voluptas!</p>
-                  <p class="video-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium qui aspernatur unde mollitia, in laborum.</p>
-                </div>
-                <div class="col-12 col-lg-6 video-part"><a class="media-lightbox" href="https://youtu.be/vHc3e46ahfY" data-lightbox>
-                    <div class="embed-responsive embed-responsive-16by9">
-                      <div class="embed-responsive-item element-cover-bg"><span class="play-wrapper"><i class="icon ion-md-play"></i></span></div>
-                    </div>
-                  </a></div>
+            
               </div>
             </div>
           </div>
@@ -449,7 +427,6 @@
                 <div class="section-heading page-heading">
                   <p class="section-description">Showcasing some of my best work</p>
                   <h2 class="section-title">Portfolio</h2>
-                  <div class="animated-bar"></div>
                 </div>
               </div>
             </div>
@@ -469,51 +446,179 @@
               <!-- Thumbnail list-->
               <div class="portfolio-grid row">
                 <!-- Single item-->
-                <div class="single-item col-6 col-lg-4 design"><a class="portfolio-item" href="img/item-1.jpg" data-lightbox>
-                    <div class="portfolio-wrapper"><img class="img-fluid" alt="Item" src="img/item-1.jpg">
-                      <div class="item-content">
-                        <h6 class="content-title">Label Tag Mockup</h6><span class="content-more">More Info</span>
+                <h1 class="text-center mb-4">Our Selection of Cars</h1>
+                <section class="image-grid">
+                  <div class="container-xxl">
+                    <div class="row gy-4">
+                      <div class="col-12 col-sm-6 col-md-4">
+                        <figure>
+                          <a class="d-block" href="">
+                            <img width="1920" height="1280" src="https://github.com/jgallagan/kitzu/blob/main/kitzu/template/img/Finished%20Convertible/car1-back.JPG?raw=true" class="img-fluid" alt="Ring of Kerry, County Kerry, Ireland" data-caption="Ring of Kerry, County Kerry, Ireland">
+
+                          </a>
+                        </figure>
+                      </div>
+                      <div class="col-12 col-sm-6 col-md-4">
+                        <figure>
+                          <a class="d-block" href="">
+                            <img width="1920" height="1280" src="https://github.com/jgallagan/kitzu/blob/main/kitzu/template/img/Finished%20Convertible/car1-trunk.JPG?raw=true" class="img-fluid" alt="Ring of Kerry, County Kerry, Ireland" data-caption="Ring of Kerry, County Kerry, Ireland">
+                          </a>
+                        </figure>
+                      </div>
+                      <div class="col-12 col-sm-6 col-md-4">
+                        <figure>
+                          <a class="d-block" href="">
+                            <img width="1920" height="1280" src="https://github.com/jgallagan/kitzu/blob/main/kitzu/template/img/Finished%20Convertible/car1-side-roof.JPG?raw=true" class="img-fluid" alt="Fintown, Ireland" data-caption="Fintown, Ireland">
+                          </a>
+                        </figure>
+                      </div>
+                      <div class="col-12 col-sm-6 col-md-4">
+                        <figure>
+                          <a class="d-block" href="">
+                            <img width="1920" height="1280" src="https://github.com/jgallagan/kitzu/blob/main/kitzu/template/img/Finished%20Convertible/car1-side-noroof.JPG?raw=true" class="img-fluid" alt="Anne Street, Dublin, Ireland" data-caption="Anne Street, Dublin, Ireland">
+                          </a>
+                        </figure>
+                      </div>
+                      <div class="col-12 col-sm-6 col-md-4">
+                        <figure>
+                          <a class="d-block" href="">
+                            <img width="1920" height="1280" src="https://github.com/jgallagan/kitzu/blob/main/kitzu/template/img/Finished%20Convertible/car1-side-fender.JPG?raw=true" class="img-fluid" alt="Doonagore Castle, Doolin, Ireland" data-caption="Doonagore Castle, Doolin, Ireland">
+                          </a>
+                        </figure>
+                      </div>
+                      <div class="col-12 col-sm-6 col-md-4">
+                        <figure>
+                          <a class="d-block" href="">
+                            <img width="1920" height="1280" src="https://github.com/jgallagan/kitzu/blob/main/kitzu/template/img/Finished%20Convertible/car1-grill.JPG?raw=true" class="img-fluid" alt="Connemara National Park, Letterfrack, Ireland" data-caption="Connemara National Park, Letterfrack, Ireland">
+                          </a>
+                        </figure>
+                      </div>
+                      <div class="col-12 col-sm-6 col-md-4">
+                        <figure>
+                          <a class="d-block" href="">
+                            <img width="1920" height="1280" src="https://github.com/jgallagan/kitzu/blob/main/kitzu/template/img/Finished%20Convertible/car1-tire.JPG?raw=true" class="img-fluid" alt="Galway, Ireland" data-caption="Galway, Ireland">
+                          </a>
+                        </figure>
+                      </div>
+                      <div class="col-12 col-sm-6 col-md-4">
+                        <figure>
+                          <a class="d-block" href="">
+                            <img width="1920" height="1280" src="https://github.com/jgallagan/kitzu/blob/main/kitzu/template/img/Finished%20Convertible/car1-back-seats.JPG?raw=true" class="img-fluid" alt="Connemara National Park, Letterfrack, Ireland" data-caption="Connemara National Park, Letterfrack, Ireland">
+                          </a>
+                        </figure>
+                      </div>
+                      <div class="col-12 col-sm-6 col-md-4">
+                        <figure>
+                          <a class="d-block" href="">
+                            <img width="1920" height="1280" src="https://github.com/jgallagan/kitzu/blob/main/kitzu/template/img/Finished%20Convertible/car1-front-seats.JPG?raw=true" class="img-fluid" alt="Connemara National Park, Letterfrack, Ireland" data-caption="Connemara National Park, Letterfrack, Ireland">
+                          </a>
+                        </figure>
+                      </div>
+                      <div class="col-12 col-sm-6 col-md-4">
+                        <figure>
+                          <a class="d-block" href="">
+                            <img width="1920" height="1280" src="https://github.com/jgallagan/kitzu/blob/main/kitzu/template/img/Finished%20Convertible/car1-middle-console.JPG?raw=true" class="img-fluid" alt="Connemara National Park, Letterfrack, Ireland" data-caption="Connemara National Park, Letterfrack, Ireland">
+                          </a>
+                        </figure>
+                      </div>
+                      <div class="col-12 col-sm-6 col-md-4">
+                        <figure>
+                          <a class="d-block" href="">
+                            <img width="1920" height="1280" src="https://github.com/jgallagan/kitzu/blob/main/kitzu/template/img/Finished%20Convertible/car1-steering-wheel.JPG?raw=true" class="img-fluid" alt="Connemara National Park, Letterfrack, Ireland" data-caption="Connemara National Park, Letterfrack, Ireland">
+                          </a>
+                        </figure>
                       </div>
                     </div>
-                  </a></div>
-                <!-- Single item-->
-                <div class="single-item col-6 col-lg-4 photos"><a class="portfolio-item" href="img/item-2.jpg" data-lightbox>
-                    <div class="portfolio-wrapper"><img class="img-fluid" alt="Item" src="img/item-2.jpg">
-                      <div class="item-content">
-                        <h6 class="content-title">3D Bag Mockup</h6><span class="content-more">More Info</span>
+                  </div>
+                </section>
+                
+                <div class="modal lightbox-modal" id="lightbox-modal" tabindex="-1">
+                  <div class="modal-dialog modal-fullscreen">
+                    <div class="modal-content">
+                      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                      <div class="modal-body">
+                        <div class="container-fluid p-0">
+                          <!-- JS content here -->
+                        </div>
                       </div>
                     </div>
-                  </a></div>
-                <!-- Single item-->
-                <div class="single-item col-6 col-lg-4 design"><a class="portfolio-item" href="img/item-3.jpg" data-lightbox>
-                    <div class="portfolio-wrapper"><img class="img-fluid" alt="Item" src="img/item-3.jpg">
-                      <div class="item-content">
-                        <h6 class="content-title">Modern Bag Design</h6><span class="content-more">More Info</span>
-                      </div>
+                  </div>
+                </div>
+                    <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js"></script>
+                
+                  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"></script>
+                      <script id="rendered-js">
+                const imageGrid = document.querySelector(".image-grid");
+                const links = imageGrid.querySelectorAll("a");
+                const imgs = imageGrid.querySelectorAll("img");
+                const lightboxModal = document.getElementById("lightbox-modal");
+                const bsModal = new bootstrap.Modal(lightboxModal);
+                const modalBody = document.querySelector(".modal-body .container-fluid");
+                
+                for (const link of links) {
+                  link.addEventListener("click", function (e) {
+                    e.preventDefault();
+                    const currentImg = link.querySelector("img");
+                    const lightboxCarousel = document.getElementById("lightboxCarousel");
+                    if (lightboxCarousel) {
+                      const parentCol = link.parentElement.parentElement;
+                      const index = [...parentCol.parentElement.children].indexOf(parentCol);
+                      const bsCarousel = new bootstrap.Carousel(lightboxCarousel);
+                      bsCarousel.to(index);
+                    } else {
+                      createCarousel(currentImg);
+                    }
+                    bsModal.show();
+                  });
+                }
+                
+                function createCarousel(img) {
+                  const markup = `
+                    <div id="lightboxCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="false">
+                      <div class="carousel-inner">
+                        ${createSlides(img)}
+                      </div> 
+                      <button class="carousel-control-prev" type="button" data-bs-target="#lightboxCarousel" data-bs-slide="prev">
+                       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                       <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#lightboxCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
                     </div>
-                  </a></div>
-                <!-- Single item-->
-                <div class="single-item col-6 col-lg-4 brand"><a class="portfolio-item" href="img/item-4.jpg" data-lightbox>
-                    <div class="portfolio-wrapper"><img class="img-fluid" alt="Item" src="img/item-4.jpg">
-                      <div class="item-content">
-                        <h6 class="content-title">Coffee Cup Design</h6><span class="content-more">More Info</span>
-                      </div>
+                    `;
+                
+                  modalBody.innerHTML = markup;
+                }
+                
+                function createSlides(img) {
+                  let markup = "";
+                  const currentImgSrc = img.getAttribute("src");
+                
+                  for (const img of imgs) {
+                    const imgSrc = img.getAttribute("src");
+                    const imgAlt = img.getAttribute("alt");
+                    const imgCaption = img.getAttribute("data-caption");
+                
+                    markup += `
+                    <div class="carousel-item${currentImgSrc === imgSrc ? " active" : ""}">
+                      <img src=${imgSrc} alt=${imgAlt}>
+                      ${imgCaption ? createCaption(imgCaption) : ""}
                     </div>
-                  </a></div>
-                <!-- Single item-->
-                <div class="single-item col-6 col-lg-4 brand"><a class="portfolio-item" href="img/item-5.jpg" data-lightbox>
-                    <div class="portfolio-wrapper"><img class="img-fluid" alt="Item" src="img/item-5.jpg">
-                      <div class="item-content">
-                        <h6 class="content-title">T-Shirt Design</h6><span class="content-more">More Info</span>
-                      </div>
-                    </div>
-                  </a></div>
-                <!-- Single item-->
-                <div class="single-item col-6 col-lg-4 photos"><a class="portfolio-item" href="img/item-6.jpg" data-lightbox>
-                    <div class="portfolio-wrapper"><img class="img-fluid" alt="Item" src="img/item-6.jpg">
-                      <div class="item-content">
-                        <h6 class="content-title">Packaging Box Mockup</h6><span class="content-more">More Info</span>
-                      </div>
+                    `;
+                  }
+                
+                  return markup;
+                }
+                
+                function createCaption(caption) {
+                  return `<div class="carousel-caption">
+                     <p class="m-0">${caption}</p>
+                    </div>`;
+                }
+                //# sourceURL=pen.js
+                    </script>
                     </div>
                   </a></div>
               </div>
@@ -535,74 +640,49 @@
             <div class="row">
               <div class="col-12">
                 <div class="section-heading page-heading">
-                  <p class="section-description">Check out my latest blog posts</p>
-                  <h2 class="section-title">My Blog</h2>
-                  <div class="animated-bar"></div>
+                  <h2 class="section-title">GIVE ME TEXT D:&lt;</h2>
+                  </div>
+                  <!-- Pricing section-->
+            <div class="pricing-section single-section">
+              <div class="row">
+                <div class="col-12">
+                  <!--<div class="section-heading">
+                    <p class="section-description">Get started with my services</p>
+                    <h2 class="section-title">Choose a Plan</h2>
+                  </div>-->
+                </div>
+              </div>
+              <div class="row align-items-center">
+                <!-- Single plan-->
+                <div class="col-lg-4"  style="left:15%;">
+                  <div class="single-plan mb-4 mb-sm-5"><i class="plan-icon icon ion-md-egg"></i>
+                    <h3 class="plan-type">Buy</h3>
+                    <h2 class="plan-price">Full Price Upfront</h2>
+                    <ul class="list-unstyled plan-list">
+                      <li>Mobile App Design</li>
+                    </ul><a class="btn button-main button-scheme plan-btn" href="#0" role="button" style="color:white !important;">Buy</a>
+                  </div>
+                </div>
+                <!-- Single plan-->
+                <div class="col-lg-4" style="left:15%;">
+                  <div class="single-plan mb-4 mb-sm-5"><i class="plan-icon icon ion-ios-rocket"></i>
+                    <h3 class="plan-type">Lease</h3>
+                    <h2 class="plan-price">Pay Price Over A Given Time</h2>
+                    <ul class="list-unstyled plan-list">
+                      <li>Mobile App Design</li>
+                      <li>Responsive Design</li>
+                      <li>Database Development</li>
+                      <li>Web Design</li>
+                      <li>24/7 Support</li>
+                    </ul><a class="btn button-main button-scheme plan-btn" href="#0" role="button">Get Pro</a>
+                  </div>
                 </div>
               </div>
             </div>
-            <!-- Blog section-->
-            <div class="blog-section single-section">
-              <div class="row justify-content-center">
-                <!-- Single post-->
-                <div class="col-12 col-sm-8 col-lg-4">
-                  <div class="card single-post"><a class="post-img" href="#0"><img class="card-img-top" src="img/post-1.jpg" alt="Blog post"><span class="content-date">11 Dec, 20</span></a>
-                    <div class="card-body post-content"><a href="#0">
-                        <h5 class="card-title content-title">Top tools for Photographers</h5>
-                      </a>
-                      <p class="card-text content-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, porro rem quod illo quam, eum alias id, repellendus magni, quas.</p>
-                    </div>
-                  </div>
                 </div>
-                <!-- Single post-->
-                <div class="col-12 col-sm-8 col-lg-4">
-                  <div class="card single-post"><a class="post-img" href="#0"><img class="card-img-top" src="img/post-2.jpg" alt="Blog post"><span class="content-date">12 Aug, 20</span></a>
-                    <div class="card-body post-content"><a href="#0">
-                        <h5 class="card-title content-title">Take a tour of my office</h5>
-                      </a>
-                      <p class="card-text content-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, porro rem quod illo quam, eum alias id, repellendus magni, quas.</p>
-                    </div>
-                  </div>
-                </div>
-                <!-- Single post-->
-                <div class="col-12 col-sm-8 col-lg-4">
-                  <div class="card single-post"><a class="post-img" href="#0"><img class="card-img-top" src="img/post-3.jpg" alt="Blog post"><span class="content-date">4 Feb, 20</span></a>
-                    <div class="card-body post-content"><a href="#0">
-                        <h5 class="card-title content-title">How i became a Web Designer</h5>
-                      </a>
-                      <p class="card-text content-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, porro rem quod illo quam, eum alias id, repellendus magni, quas.</p>
-                    </div>
-                  </div>
-                </div><!-- Single post-->
-                <div class="col-12 col-sm-8 col-lg-4">
-                  <div class="card single-post"><a class="post-img" href="#0"><img class="card-img-top" src="img/post-4.jpg" alt="Blog post"><span class="content-date">11 Dec, 19</span></a>
-                    <div class="card-body post-content"><a href="#0">
-                        <h5 class="card-title content-title">How to improve work performance</h5>
-                      </a>
-                      <p class="card-text content-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, porro rem quod illo quam, eum alias id, repellendus magni, quas.</p>
-                    </div>
-                  </div>
-                </div>
-                <!-- Single post-->
-                <div class="col-12 col-sm-8 col-lg-4">
-                  <div class="card single-post"><a class="post-img" href="#0"><img class="card-img-top" src="img/post-5.jpg" alt="Blog post"><span class="content-date">15 Nov, 19</span></a>
-                    <div class="card-body post-content"><a href="#0">
-                        <h5 class="card-title content-title">How to work from home</h5>
-                      </a>
-                      <p class="card-text content-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, porro rem quod illo quam, eum alias id, repellendus magni, quas.</p>
-                    </div>
-                  </div>
-                </div>
-                <!-- Single post-->
-                <div class="col-12 col-sm-8 col-lg-4">
-                  <div class="card single-post"><a class="post-img" href="#0"><img class="card-img-top" src="img/post-6.jpg" alt="Blog post"><span class="content-date">8 Aug, 19</span></a>
-                    <div class="card-body post-content"><a href="#0">
-                        <h5 class="card-title content-title">How to enjoy your business trip</h5>
-                      </a>
-                      <p class="card-text content-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, porro rem quod illo quam, eum alias id, repellendus magni, quas.</p>
-                    </div>
-                  </div>
-                </div>
+              </div>
+            </div>
+            
               </div>
             </div>
           </div>
@@ -610,6 +690,29 @@
       </div>
     </div>
   </div>
+
+  <section class="image-grid">
+    <div class="container-xxl">
+      <div class="row gy-4">
+        <div class="col-12 col-sm-6 col-md-4">
+          <figure>
+            <a class="d-block" href="">
+              <img width="1920" height="1280" src="ireland1.jpg" class="img-fluid" alt="Ring of Kerry, County Kerry, Ireland" data-caption="Ring of Kerry, County Kerry, Ireland">
+            </a>
+          </figure>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4">
+          <figure>
+            <a class="d-block" href="">
+              <img width="1920" height="1280" src="ireland2.jpg" class="img-fluid" alt="Fintown, Ireland" data-caption="Fintown, Ireland">
+            </a>
+          </figure>
+        </div>
+        <!-- more columns here -->
+      </div>
+    </div>
+  </section>
+
   <!-- Contact lightbox-->
   <div class="lightbox-wrapper" id="contact" data-simplebar>
     <div class="container">
@@ -622,9 +725,8 @@
             <div class="row">
               <div class="col-12">
                 <div class="section-heading page-heading">
-                  <p class="section-description">Feel free to contact me anytimes</p>
+                  <p class="section-description">Need Help?</p>
                   <h2 class="section-title">Get in Touch</h2>
-                  <div class="animated-bar"></div>
                 </div>
               </div>
             </div>
@@ -634,7 +736,7 @@
                 <!-- Contact form-->
                 <div class="col-12 col-lg-7">
                   <form class="contact-form" id="contact-form" action="php/contact.php">
-                    <h4 class="content-title">Message Me</h4>
+                    <h4 class="content-title">Message Ue</h4>
                     <div class="row">
                       <div class="col-12 col-md-6 form-group"><input class="form-control" id="contact-name" type="text" name="name" placeholder="Name" required=""></div>
                       <div class="col-12 col-md-6 form-group"><input class="form-control" id="contact-email" type="email" name="email" placeholder="Email" required=""></div>
@@ -653,30 +755,16 @@
                     <p class="info-description">Always available for freelance work if the right project comes along, Feel free to contact me!</p>
                     <ul class="list-unstyled list-info">
                       <li>
-                        <div class="media align-items-center"><span class="info-icon"><i class="icon ion-logo-ionic"></i></span>
+                        <div class="media align-items-center"><span class="info-icon"><i style="color:#ed1c24" class="icon ion-md-map"></i></span>
                           <div class="media-body info-details">
-                            <h6 class="info-type">Name</h6><span class="info-value">Emma Smith</span>
+                            <h6 class="info-type">Headquarters</h6><span class="info-value" style="color:#f05250">4565 Columbus Pike, Delaware, OH 43015</span>
                           </div>
                         </div>
                       </li>
                       <li>
-                        <div class="media align-items-center"><span class="info-icon"><i class="icon ion-md-map"></i></span>
+                        <div class="media align-items-center"><span class="info-icon"><i style="color:#ed1c24" class="icon ion-md-send"></i></span>
                           <div class="media-body info-details">
-                            <h6 class="info-type">Location</h6><span class="info-value">308 Negra Arroyo Lane, Albuquerque, New Mexico 87104</span>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="media align-items-center"><span class="info-icon"><i class="icon ion-md-call"></i></span>
-                          <div class="media-body info-details">
-                            <h6 class="info-type">Call Me</h6><span class="info-value"><a href="tel:+441632967704">+44 1632 967704</a></span>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="media align-items-center"><span class="info-icon"><i class="icon ion-md-send"></i></span>
-                          <div class="media-body info-details">
-                            <h6 class="info-type">Email Me</h6><span class="info-value"><a href="mailto:emma@example.com">emma@example.com</a></span>
+                            <h6 class="info-type">Email Me</h6><span class="info-value"><a href="mailto:firstimecars@gmail.com">firstimecars@gmail.com</a></span>
                           </div>
                         </div>
                       </li>
@@ -691,6 +779,36 @@
     </div>
   </div>
   <!-- Scripts-->
+  <script>
+  let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/imagesloaded.pkgd.min.js"></script>

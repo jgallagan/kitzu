@@ -1420,7 +1420,7 @@ hr {
 .resume-section .resume-item .item-title {
   line-height: 100%;
   margin-bottom: 9px;
-  color: #ff6b70;
+  color: #f05250 !important;
 }
 
 .resume-section .resume-item .item-details {
