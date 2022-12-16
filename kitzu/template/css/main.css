@@ -68,13 +68,13 @@ b {
 /* Other elements */
 a {
   transition: all 0.15s ease-in-out;
-  color: #CC2128 !important;
+  color: #f05250 !important;
 }
 
 a:hover,
 a:focus {
   text-decoration: none;
-  color: #CC2128;
+  color: #f05250;
 }
 
 hr {
@@ -108,7 +108,7 @@ hr {
 }
 
 .button-main.button-scheme {
-  color: #fff;
+  color: #fff !important;
 }
 
 /* Helpers */
@@ -556,7 +556,7 @@ hr {
   margin-bottom: 0;
   position: relative;
   z-index: 9;
-  color: #AD1F25;
+  color: #ed1c24;
 }
 
 .lightbox-wrapper .lightbox-content .section-heading.page-heading {
@@ -877,7 +877,7 @@ hr {
 }
 
 .home-area .home-name {
-  color: #AD1F25;
+  color: #ed1c24;
   font-size: 70px;
   font-weight: 700;
   letter-spacing: 1px;
@@ -885,7 +885,7 @@ hr {
 }
 
 .home-area .home-headline {
-  color: #cc2128;
+  color: #ed1c24;
   font-size: 32px;
   font-weight: 400, bold;
   letter-spacing: 0.3px;
@@ -900,7 +900,7 @@ hr {
   vertical-align: top;
   font-style: italic;
   font-weight: 400, bolder;
-  color: #aa2128;
+  color:#f05250;
 }
 
 .home-area .home-headline .single-headline::after {
@@ -1025,7 +1025,7 @@ hr {
 }
 
 .info-section .info-content .content-info .single-info>p {
-  color: #cc2128;
+  color: #f05250;
   display: inline-block;
   margin-bottom: 0;
 }
@@ -1082,7 +1082,7 @@ hr {
 
   .info-section .info-content .content-subtitle {
     display: none;
-    color: #AD1F25;
+    color: #ed1c24;
   }
 
   .info-section .info-content .content-title {
@@ -1119,7 +1119,7 @@ hr {
 
   .info-section .info-content .content-subtitle {
     font-size: 18px;
-    color: #AD1F25;
+    color: #ed1c24;
   }
 
   .info-section .info-content .content-title {
@@ -1173,7 +1173,7 @@ hr {
 
   .info-section .info-content .content-subtitle {
     font-size: 18px;
-    color: #AD1F25;
+    color: #ed1c24;
   }
 
   .info-section .info-content .content-title {
@@ -1345,6 +1345,7 @@ hr {
 
 .pricing-section .single-plan .plan-list {
   margin-bottom: 18px;
+  color:#f05250;
 }
 
 .pricing-section .single-plan .plan-list li {
@@ -1846,7 +1847,7 @@ hr {
 .contact-section .contact-info .info-description {
   font-size: 15px;
   margin-bottom: 28px;
-  color:#cc2128;
+  color:#f05250;
 }
 
 .contact-section .contact-info .list-info>li:first-child .info-icon {
@@ -1892,12 +1893,12 @@ hr {
 }
 
 .contact-section .contact-info .list-info .info-details .info-value a {
-  color: #CC2128 !important;
+  color: #f05250 !important;
 }
 
 .contact-section .contact-info .list-info .info-details .info-value a:hover,
 .contact-section .contact-info .list-info .info-details .info-value a:focus {
-  color: #CC2128 !important;
+  color: #f05250 !important;
 }
 
 @media (max-width: 1199.98px) {
@@ -1920,20 +1921,4 @@ hr {
   .contact-section .contact-info .info-description {
     font-size: 14px;
   }
-}
-
-.float-child {
-  width: 50%;
-  width: fit-content;
-  float: left;
-  margin-left: 30%;
-  padding: 20px;
-  padding-bottom: 50px;
-  padding-top: 50px;
-  border: 2px solid red;
-  color:white;
-} 
-
-.float-child.green {
-  margin-right":100px;
 }
