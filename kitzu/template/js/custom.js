@@ -87,3 +87,16 @@ function createCaption(caption) {
      <p class="m-0">${caption}</p>
     </div>`;
 }
+
+/*function fun() {
+  let path = ("/kitzu/template/img/Finished Convertible/"+this.innerHTML+".JPG");
+  document.getElementById("car-model").src = path;
+}*/
+
+let path = ("/kitzu/template/img/Finished Convertible/"+this.innerHTML+".JPG");
+$('.abc').prop('src', path);
+
+/*const collection = document.getElementsByClassName("abc");
+for(let i = 0; i < collection.length; i++) {
+  collection[i].addEventListener("click", fun);
+}*/
